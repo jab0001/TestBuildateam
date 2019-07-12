@@ -12,83 +12,139 @@
       <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="86" height="35" alt="Mishka">
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a>Каталог товаров</a>
-          </li>
-          <li class="site-list__item">
-            <a href="form.html">Вязание на заказ</a>
-          </li>
-          <li class="site-list__item">
-            <form class="site-list__item-search" action="https://echo.htmlacademy.ru" method="post">
-              <input class="site-list__item--search-main" type="search" id="search-text" placeholder="Поиск по сайту">
-              <label class="site-list__item--search-label" for="search-text"></label>
-            </form>
-          </li>
-          <li class="site-list__item">
-            <a href="#">Корзина: пока пуста</a>
-          </li>
-        </ul>
-      </div>
+      <button class="main-nav__toggle" type="button">
+        <span class="vissualy-hidden">
+          Открыть меню
+        </span>
+      </button>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a href="catalog.html">Каталог товаров</a>
+        </li>
+        <li class="site-list__item site-list__item--active">
+          <a>Вязание на заказ</a>
+        </li>
+        <li class="site-list__item site-list__item-img-search">
+          <a href="#">Поиск по сайту</a>
+        </li>
+        <li class="site-list__item site-list__item-img-buy">
+          <a href="#">Корзина: пока пуста</a>
+        </li>
+      </ul>
     </nav>
   </header>
 
   <main class="page-order">
-    <h1 class="visually-hidden">Форма для заказа товаров</h1>
+    <h1 class="page-order__title">Форма для заказа товаров</h1>
     <section class="order">
-      <h2 class="order__title">Вязание на заказ</h2>
       <p class="order__info">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы
         свяжемся с вами, чтобы уточнить детали.</p>
       <form class="order__filter" method="get" action="https://echo.htmlacademy.ru">
-        <fieldset class="order__filter-type">
-          <legend class="order__filter-name">
+        <fieldset class="filter-type">
+          <legend class="filter-type__name">
             тип
           </legend>
-          <ul class="order__filter-toggles">
-            <li class="order__filter-options">
-              <input class="order__filter-input" type="radio" name="product-type" value="have" checked>
-              <label>Аксессуар для
+          <ul class="filter-type__toggles">
+            <li class="filter-type__options">
+              <input id="filter-have" class="filter-type__input" type="radio" name="product-type" value="have" checked>
+              <label class="filter-type__label" for="filter-have">Аксессуар для
                 интерьера</label>
             </li>
-            <li class="order__filter-options">
-              <input class="order__filter-input" type="radio" name="product-type" value="dont-have">
-              <label>Детская игрушка</label>
+            <li class="filter-type__options">
+              <input id="filter-donthave" class="filter-type__input" type="radio" name="product-type" value="dont-have">
+              <label class="filter-type__label" for="filter-donthave">Детская игрушка</label>
             </li>
           </ul>
         </fieldset>
-        <fielset class="order__filter-color">
-          <legend class="order__filter-name">
+        <fielset class="filter-color">
+          <legend class="filter-color__name">
             Цвет
           </legend>
-          <ul class="order__filter-checkbox order-checkbox">
-            <li class="order-checkbox__options">
-              <input class="order__checkbox-input" type="checkbox" name="color" checked>
-              <label>Белый</label>
+          <ul class="filter-color__checkbox">
+            <li class="filter-color__options">
+              <input id="white" class="filter-color__input" type="checkbox" name="color" value="picked" checked>
+              <label class="filter-color__label" for="white">Белый</label>
             </li>
-            <li class="order-checkbox__options">
-              <input class="order__checkbox-input" type="checkbox" name="color" checked>
-              <label>Серый</label>
+            <li class="filter-color__options">
+              <input id="grey" class="filter-color__input" type="checkbox" name="color" value="picked" checked>
+              <label class="filter-color__label" for="grey">Серый</label>
             </li>
-            <li class="order-checkbox__options">
-              <input class="order__checkbox-input" type="checkbox" name="color">
-              <label>«Тиффани»</label>
+            <li class="filter-color__options">
+              <input id="tiffuny" class="filter-color__input" type="checkbox" name="color" value="no-picked">
+              <label class="filter-color__label" for="tiffuny">«Тиффани»</label>
             </li>
-            <li class="order-checkbox__options">
-              <input class="order__checkbox-input" type="checkbox" name="color">
-              <label>Черный</label>
+            <li class="filter-color__options">
+              <input id="black" class="filter-color__input" type="checkbox" name="color" value="no-picked">
+              <label class="filter-color__label" for="black">Черный</label>
             </li>
-            <li class="order-checkbox__options">
-              <input class="order__checkbox-input" type="checkbox" name="color">
-              <label>Розовый</label>
+            <li class="filter-color__options">
+              <input id="pink" class="filter-color__input" type="checkbox" name="color" value="no-picked">
+              <label class="filter-color__label" for="pink">Розовый</label>
             </li>
-            <li class="order-checkbox__options">
-              <input class="order__checkbox-input" type="checkbox" name="color">
-              <label>Оранжевый</label>
+            <li class="filter-color__options">
+              <input id="orange" class="filter-color__input" type="checkbox" name="color" value="no-picked">
+              <label class="filter-color__label" for="orange">Оранжевый</label>
             </li>
           </ul>
         </fielset>
+      </form>
+      <form class="order__questions" method="post" action="https://echo.htmlacademy.ru">
+        <fieldset class="user-information">
+          <legend class="user-information__name">
+            ФИО
+          </legend>
+          <ul class="user-information__list">
+            <li class="user-information__cell">
+              <label class="user-information__field" for="user-name">
+                Имя:
+              </label>
+              <input id="user-name" class="user-information__value" type="text" name="user-name"
+                placeholder="Введите ваше имя*">
+            </li>
+            <li class="user-information__cell">
+              <label class="user-information__field" for="user-surname">
+                Фамилия:
+              </label>
+              <input id="user-surname" class="user-information__value" type="text" name="user-surname"
+                placeholder="Укажите фамилию*">
+            </li>
+            <li class="user-information__cell">
+              <label for="user-secondname" class="user-information__field">
+                Отчество:
+              </label>
+              <input id="user-secondname" class="user-information__value" type="text" name="user-secondname"
+                placeholder="Отчество, если желаете">
+            </li>
+            <li class="user-information__cell">
+              <label class="user-information__field user-information__field-color user-information__field-phone"
+                for="user-phone">
+                тел
+              </label>
+              <input id="user-phone" class="user-information__value user-information__value-phone" type="tel"
+                name="user-phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+            </li>
+            <li class="user-information__cell">
+              <label for="user-email"
+                class="user-information__field user-information__field-color user-information__field-email">
+                E-mail
+              </label>
+              <input id="user-email" class="user-information__value user-information__value-email" type="email"
+                name="user-email" placeholder="Ваш Email*">
+            </li>
+            <li class="user-information__cell">
+              <label for="user-text" class="user-information__field user-information__field-color">
+                Доп
+              </label>
+              <input id="user-text" class="user-information__value" type="textarea" name="user-text" placeholder="Опишите все ваши
+              пожелания к заказу">
+            </li>
+          </ul>
+          <small class="user-information__legend">
+            <sup>*</sup>Поля обязательны для заполнения
+          </small>
+          <button class="button user-information__button" type="button">Отправить заказ</button>
+        </fieldset>
+
       </form>
     </section>
   </main>

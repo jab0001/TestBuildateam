@@ -12,34 +12,33 @@
       <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="86" height="35" alt="Mishka">
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a href="catalog.html">Каталог товаров</a>
-          </li>
-          <li class="site-list__item">
-            <a href="form.html">Вязание на заказ</a>
-          </li>
-          <li class="site-list__item">
-            <form class="site-list__item-search" action="https://echo.htmlacademy.ru" method="post">
-              <input class="site-list__item--search-main" type="search" id="search-text" placeholder="Поиск по сайту">
-              <label class="site-list__item--search-label" for="search-text"></label>
-            </form>
-          </li>
-          <li class="site-list__item">
-            <a href="#">Корзина: пока пуста</a>
-          </li>
-        </ul>
-      </div>
+      <button class="main-nav__toggle" type="button">
+        <span class="vissualy-hidden">
+          Открыть меню
+        </span>
+      </button>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a href="catalog.html">Каталог товаров</a>
+        </li>
+        <li class="site-list__item">
+          <a href="form.html">Вязание на заказ</a>
+        </li>
+        <li class="site-list__item site-list__item-img-search">
+          <a href="#">Поиск по сайту</a>
+        </li>
+        <li class="site-list__item site-list__item-img-buy">
+          <a href="#">Корзина: пока пуста</a>
+        </li>
+      </ul>
     </nav>
   </header>
 
   <main class="page-main">
-    <h1 class="visually-hidden">"Мишка" - экологически чистые игрушки и предметы интерьера ручной работы из пряжи.</h1>
+    <h1 class="page-main__title">Милые штуки ручной работы для дома</h1>
     <section class="things">
-      <h2 class="things-title">
-        Милые штуки ручной работы для дома
+      <h2 class="visually-hidden">
+        Навигация по каталогу
       </h2>
       <ul class="things-categories things-list">
         <li class="things-list__categories">
@@ -161,12 +160,12 @@
               д. 19/8, офис 101
             </td>
           </tr>
-          </table>
-          <div class="contacts__map-wrapper">
+        </table>
+        <div class="contacts__map-wrapper">
           <img class="contacts__map" src="img/map-mobile-1-x.svg" width="322" height="457"
             alt="карта с местоположением офиса">
           <button class="button contacts__button" type="button">Напишите нам</button>
-          </div>
+        </div>
       </div>
     </section>
   </main>
@@ -175,7 +174,8 @@
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://instagramm.com/htmlacademy">Мы в Инстаграмме</a>
+            <a class="social__link social__link--vkontakte" href="https://instagramm.com/htmlacademy">Мы в
+              Инстаграмме</a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
