@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Form Mishka</title>
+</head>
+
+<body>
+  <header class="page-header">
+    <a class="page-header__logo" href="index.html">
+      <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="86" height="35" alt="Mishka">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a>Каталог товаров</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">Вязание на заказ</a>
+          </li>
+          <li class="site-list__item">
+            <form class="site-list__item-search" action="https://echo.htmlacademy.ru" method="post">
+              <input class="site-list__item--search-main" type="search" id="search-text" placeholder="Поиск по сайту">
+              <label class="site-list__item--search-label" for="search-text"></label>
+            </form>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Корзина: пока пуста</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-order">
+    <h1 class="visually-hidden">Форма для заказа товаров</h1>
+    <section class="order">
+      <h2 class="order__title">Вязание на заказ</h2>
+      <p class="order__info">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы
+        свяжемся с вами, чтобы уточнить детали.</p>
+      <form class="order__filter" method="get" action="https://echo.htmlacademy.ru">
+        <fieldset class="order__filter-type">
+          <legend class="order__filter-name">
+            тип
+          </legend>
+          <ul class="order__filter-toggles">
+            <li class="order__filter-options">
+              <input class="order__filter-input" type="radio" name="product-type" value="have" checked>
+              <label>Аксессуар для
+                интерьера</label>
+            </li>
+            <li class="order__filter-options">
+              <input class="order__filter-input" type="radio" name="product-type" value="dont-have">
+              <label>Детская игрушка</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fielset class="order__filter-color">
+          <legend class="order__filter-name">
+            Цвет
+          </legend>
+          <ul class="order__filter-checkbox order-checkbox">
+            <li class="order-checkbox__options">
+              <input class="order__checkbox-input" type="checkbox" name="color" checked>
+              <label>Белый</label>
+            </li>
+            <li class="order-checkbox__options">
+              <input class="order__checkbox-input" type="checkbox" name="color" checked>
+              <label>Серый</label>
+            </li>
+            <li class="order-checkbox__options">
+              <input class="order__checkbox-input" type="checkbox" name="color">
+              <label>«Тиффани»</label>
+            </li>
+            <li class="order-checkbox__options">
+              <input class="order__checkbox-input" type="checkbox" name="color">
+              <label>Черный</label>
+            </li>
+            <li class="order-checkbox__options">
+              <input class="order__checkbox-input" type="checkbox" name="color">
+              <label>Розовый</label>
+            </li>
+            <li class="order-checkbox__options">
+              <input class="order__checkbox-input" type="checkbox" name="color">
+              <label>Оранжевый</label>
+            </li>
+          </ul>
+        </fielset>
+      </form>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://instagramm.com/htmlacademy">Мы в
+              Инстаграмме</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="https://www.telegramm.com/htmlacademy">Мы в
+              Телеграмме</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано:</b>
+        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
