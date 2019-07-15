@@ -37,20 +37,21 @@
   <main class="page-order">
     <h1 class="page-order__title">Вязание на заказ</h1>
     <section class="order">
+      <h2 class="vissualy-hidden">Форма для заказа</h2>
       <p class="order__info">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы
         свяжемся с вами, чтобы уточнить детали.</p>
-      <form class="order__filter" method="get" action="https://echo.htmlacademy.ru">
+      <form class="order__questions" method="post" action="https://echo.htmlacademy.ru">
         <fieldset class="filter-type">
           <legend class="filter-type__name">
             тип
           </legend>
           <ul class="filter-type__toggles">
-            <li class="filter-type__options">
+            <li class="filter-type__option">
               <input id="filter-have" class="filter-type__input" type="radio" name="product-type" value="have" checked>
               <label class="filter-type__label" for="filter-have">Аксессуар для
                 интерьера</label>
             </li>
-            <li class="filter-type__options">
+            <li class="filter-type__option">
               <input id="filter-donthave" class="filter-type__input" type="radio" name="product-type" value="dont-have">
               <label class="filter-type__label" for="filter-donthave">Детская игрушка</label>
             </li>
@@ -60,62 +61,60 @@
           <legend class="filter-color__name">
             Цвет
           </legend>
-          <ul class="filter-color__checkbox">
-            <li class="filter-color__options">
+          <ul class="filter-color__list">
+            <li class="filter-color__item">
               <input id="white" class="filter-color__input" type="checkbox" name="color" value="белый" checked>
               <label class="filter-color__label" for="white">Белый</label>
             </li>
-            <li class="filter-color__options">
+            <li class="filter-color__item">
               <input id="grey" class="filter-color__input" type="checkbox" name="color" value="серый" checked>
               <label class="filter-color__label" for="grey">Серый</label>
             </li>
-            <li class="filter-color__options">
+            <li class="filter-color__item">
               <input id="tiffuny" class="filter-color__input" type="checkbox" name="color" value="тиффани">
               <label class="filter-color__label" for="tiffuny">«Тиффани»</label>
             </li>
-            <li class="filter-color__options">
+            <li class="filter-color__item">
               <input id="black" class="filter-color__input" type="checkbox" name="color" value="черный">
               <label class="filter-color__label" for="black">Черный</label>
             </li>
-            <li class="filter-color__options">
+            <li class="filter-color__item">
               <input id="pink" class="filter-color__input" type="checkbox" name="color" value="розовый">
               <label class="filter-color__label" for="pink">Розовый</label>
             </li>
-            <li class="filter-color__options">
+            <li class="filter-color__item">
               <input id="orange" class="filter-color__input" type="checkbox" name="color" value="оранжевый">
               <label class="filter-color__label" for="orange">Оранжевый</label>
             </li>
           </ul>
         </fielset>
-      </form>
-      <form class="order__questions" method="post" action="https://echo.htmlacademy.ru">
         <fieldset class="user-information">
           <legend class="user-information__name">
             ФИО
           </legend>
           <ul class="user-information__list">
-            <li class="user-information__cell">
+            <li class="user-information__item">
               <label class="user-information__field" for="user-name">
                 Имя:
               </label>
               <input id="user-name" class="user-information__value" type="text" name="user-name"
                 placeholder="Введите ваше имя*">
             </li>
-            <li class="user-information__cell">
+            <li class="user-information__item">
               <label class="user-information__field" for="user-surname">
                 Фамилия:
               </label>
               <input id="user-surname" class="user-information__value" type="text" name="user-surname"
                 placeholder="Укажите фамилию*">
             </li>
-            <li class="user-information__cell">
+            <li class="user-information__item">
               <label for="user-secondname" class="user-information__field">
                 Отчество:
               </label>
-              <input id="user-secondname" class="user-information__value" type="text" name="user-secondname"
+              <input id="user-secondname" class="user-information__textarea" type="text" name="user-secondname"
                 placeholder="Отчество, если желаете">
             </li>
-            <li class="user-information__cell">
+            <li class="user-information__item">
               <label class="user-information__field user-information__field-color user-information__field-phone"
                 for="user-phone">
                 тел
@@ -123,7 +122,7 @@
               <input id="user-phone" class="user-information__value user-information__value-phone" type="tel"
                 name="user-phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
             </li>
-            <li class="user-information__cell">
+            <li class="user-information__item">
               <label for="user-email"
                 class="user-information__field user-information__field-color user-information__field-email">
                 E-mail
@@ -131,7 +130,7 @@
               <input id="user-email" class="user-information__value user-information__value-email" type="email"
                 name="user-email" placeholder="Ваш Email*">
             </li>
-            <li class="user-information__cell">
+            <li class="user-information__item">
               <label for="user-text" class="user-information__field user-information__field-color">
                 Доп
               </label>
@@ -142,7 +141,7 @@
           <small class="user-information__legend">
             <sup>*</sup>Поля обязательны для заполнения
           </small>
-          <button class="button user-information__button" type="button">Отправить заказ</button>
+          <button class="button user-information__button" type="submit">Отправить заказ</button>
         </fieldset>
 
       </form>
