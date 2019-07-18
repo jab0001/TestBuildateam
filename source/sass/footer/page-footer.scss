@@ -1,0 +1,40 @@
+.page-footer {
+  background-color: #f1f1f1;
+}
+
+.social__list {
+  list-style:none;
+}
+
+.copyright__text {
+  font-family: "OpenSans", Arial , sans-serif;
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 0.95;
+  text-align: left;
+  color: #000000;
+}
+
+.copyright__link {
+  text-decoration:none;
+  fill:#63d1bb;
+
+  &:hover {
+    fill:#46c1ae;
+  }
+
+  &:focus {
+    fill:#46c1ae;
+    opacity:0.3;
+  }
+}
+
+.social__link {
+  &:hover {
+    fill:#46c1ae;
+  }
+  &:focus {
+    fill:#46c1ae;
+    opacity:0.3;
+  }
+}

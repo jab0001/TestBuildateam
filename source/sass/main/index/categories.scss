@@ -1,0 +1,54 @@
+.categories__item {
+  list-style:none;
+}
+
+.categories__list {
+  margin:0;
+  padding:0;
+
+  margin-top:120px;
+}
+
+.categories__item-interior {
+  min-height:103px;
+  background-color:#63d1bb;
+  &:hover {
+    background-color: #59d5bc;
+  }
+  &:focus {
+    background-color: #59d5bc;
+  }
+}
+
+.categories__item-toys {
+  min-height:103px;
+  background-color: #56c3b2;
+  &:hover {
+    background-color: #46c1ae;
+  }
+  &:focus {
+    background-color: #46c1ae;
+  }
+}
+
+.categories__link {
+  display:block;
+
+  font-family: "OpenSans", Arial , sans-serif;
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 1.26;
+  text-align: left;
+  color: #ffffff;
+
+  margin-left:29px;
+  padding-top:30px;
+
+  width:106px;
+
+  text-decoration:none;
+  &:focus {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
