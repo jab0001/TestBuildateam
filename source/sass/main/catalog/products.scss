@@ -1,45 +1,46 @@
 .products {
-  margin:0 auto;
+  margin: 0 auto;
 
-  width:260px;
+  width: 260px;
 
   &-list {
-    padding:0;
-    margin:0;
+    padding: 0;
+    margin: 0;
   }
 }
 
 .products-list__item {
-  list-style:none;
+  list-style: none;
 
-  width:260px;
-  min-height:374px;
+  width: 260px;
+  min-height: 374px;
 
-  margin-top:30px;
+  margin-top: 30px;
 
-  border:1px solid #ececec;
+  border: 1px solid #ececec;
+
   &:hover {
-    box-shadow: 0px 6px 10px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
   }
 
   &:focus {
-    box-shadow: 0px 3px 5px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
   }
 }
 
 .products-list__link {
-  text-decoration:none;
+  text-decoration: none;
 }
 
 .products-list__item-title {
-  font-family: "OpenSans", Arial , sans-serif;
+  font-family: "OpenSans", "Arial", sans-serif;
   font-size: 17px;
   font-weight: bold;
   line-height: 1.41;
   text-align: left;
   color: #000000;
 
-  margin-left:28px;
+  margin-left: 28px;
 
   &:hover {
     color: rgba(0, 0, 0, 0.6);
@@ -51,28 +52,23 @@
 }
 
 .products-list__item-info {
-  font-family: "OpenSans", Arial , sans-serif;
+  font-family: "OpenSans", "Arial", sans-serif;
   font-size: 13px;
   font-weight: normal;
   line-height: 2.31;
   text-align: left;
   color: #444444;
 
-  margin-left:28px;
+  margin-left: 28px;
 }
 
 .products-list__item-price {
-  font-family: "OpenSans", Arial , sans-serif;
+  font-family: "OpenSans", "Arial", sans-serif;
   font-size: 15px;
   font-weight: bold;
   line-height: 1.6;
   text-align: left;
   color: #000000;
 
-  margin-left:28px;
+  margin-left: 28px;
 }
-
-
-
-
-

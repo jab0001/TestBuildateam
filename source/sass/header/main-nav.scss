@@ -1,35 +1,36 @@
 .main-nav {
   &__list {
-    list-style:none;
+    list-style: none;
   }
 }
 
 .site-list__link {
-  font-family: "OpenSans", Arial , sans-serif;
+  font-family: "OpenSans", "Arial", sans-serif;
   font-size: 17px;
   font-weight: bold;
   line-height: 1.41;
   text-align: left;
   color: #000000;
 
-  text-decoration:none;
+  text-decoration: none;
 
   &:hover {
     color: rgba(0, 0, 0, 0.6);
   }
+
   &:focus {
     color: rgba(0, 0, 0, 0.3);
   }
 }
 
 .main-nav__toggle {
-  width:20px;
-  height:14px;
+  width: 20px;
+  height: 14px;
 
-  border:none;
+  border: none;
 
-  background-color:#ffffff;
-  background-image:url("../../img/icon-menu-open.svg");
+  background-color: #ffffff;
+  background-image: url("../../img/icon-menu-open.svg");
 
-  cursor:pointer;
+  cursor: pointer;
 }

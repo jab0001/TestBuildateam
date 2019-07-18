@@ -1,5 +1,5 @@
 .contacts__title {
-  font-family: "OpenSans", Arial , sans-serif;
+  font-family: "OpenSans", "Arial", sans-serif;
   font-size: 18px;
   font-weight: bold;
   line-height: 1.67;
@@ -9,7 +9,7 @@
 
 .contacts__field,
 .contacts__value {
-  font-family: "OpenSans", Arial , sans-serif;
+  font-family: "OpenSans", "Arial", sans-serif;
   font-size: 15px;
   font-weight: normal;
   line-height: 2;
@@ -18,21 +18,22 @@
 }
 
 .contacts__button {
-  font-family: "OpenSans", Arial , sans-serif;
+  font-family: "OpenSans", "Arial", sans-serif;
   font-size: 18px;
   font-weight: bold;
   line-height: 1.11;
   text-align: center;
   color: #444444;
 
-  text-decoration:none;
+  text-decoration: none;
 
   &:hover {
-    background-color:#444444;
-    color:#ffffff;
+    background-color: #444444;
+    color: #ffffff;
   }
+
   &:focus {
     color: rgba(255, 255, 255, 0.3);
-    background-color:#444444;
+    background-color: #444444;
   }
 }
