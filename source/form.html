@@ -18,18 +18,18 @@
           Открыть меню
         </span>
       </button>
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item">
-          <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
         </li>
-        <li class="site-list__item">
-          <a class="site-list__link site-list__link--active">Вязание на заказ</a>
+        <li class="main-nav__item">
+          <a class="main-nav__link main-nav__link--active">Вязание на заказ</a>
         </li>
-        <li class="site-list__item">
-          <a class="site-list__link site-list__link--img-search" href="#">Поиск по сайту</a>
+        <li class="main-nav__item">
+          <a class="main-nav__link main-nav__link--img-search" href="#">Поиск по сайту</a>
         </li>
-        <li class="site-list__item">
-          <a class="site-list__link site-list__link--img-buy" href="#">Корзина: пока пуста</a>
+        <li class="main-nav__item">
+          <a class="main-nav__link main-nav__link--img-buy" href="#">Корзина: пока пуста</a>
         </li>
       </ul>
     </nav>
@@ -58,7 +58,7 @@
             </li>
           </ul>
         </fieldset>
-        <fielset class="filter-color">
+        <fieldset class="filter-color">
           <legend class="filter-color__name">
             Цвет
           </legend>
@@ -88,7 +88,7 @@
               <label class="filter-color__label" for="orange">Оранжевый</label>
             </li>
           </ul>
-        </fielset>
+        </fieldset>
         <fieldset class="user-information">
           <legend class="user-information__name">
             ФИО
@@ -131,19 +131,19 @@
               <input id="user-email" class="user-information__value user-information__value-email" type="email"
                 name="user-email" placeholder="Ваш Email*">
             </li>
-            <li class="user-information__item">
+          </ul>
+            <p class="user-information__textarea">
               <label for="user-text" class="user-information__field user-information__field-color">
                 Доп
               </label>
               <textarea id="user-text" class="user-information__value" name="user-text" placeholder="Опишите все ваши
               пожелания к заказу"></textarea>
-            </li>
-          </ul>
+            </p>
         </fieldset>
-        <small class="user-information__legend">
+        <small class="order__legend">
           <sup>*</sup>Поля обязательны для заполнения
         </small>
-        <button class="button user-information__button" type="submit">Отправить заказ</button>
+        <button class="button order__button" type="submit">Отправить заказ</button>
       </form>
     </section>
   </main>

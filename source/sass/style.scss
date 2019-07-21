@@ -1,25 +1,26 @@
-@import "header/page-header.scss";
-@import "header/main-nav.scss";
+@import "normalize.scss";
 @import "fonts.scss";
-@import "mixin.scss";
+@import "global.scss";
 @import "variables.scss";
-@import "footer/page-footer.scss";
-@import "main/index/page-main.scss";
-@import "main/index/categories.scss";
-@import "main/index/top-sale.scss";
-@import "main/index/reviews.scss";
-@import "main/index/about-us.scss";
-@import "main/index/contacts.scss";
-@import "main/catalog/page-catalog.scss";
-@import "main/catalog/products.scss";
-@import "main/catalog/manufacturing.scss";
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/social.scss";
+@import "blocks/copyright.scss";
+@import "blocks/page-main.scss";
+@import "blocks/categories.scss";
+@import "blocks/top-sale.scss";
+@import "blocks/reviews.scss";
+@import "blocks/about-us.scss";
+@import "blocks/contacts.scss";
+@import "blocks/page-catalog.scss";
+@import "blocks/products.scss";
+@import "blocks/manufacturing.scss";
+
+/*
 @import "main/form/filter-color.scss";
 @import "main/form/filter-type.scss";
 @import "main/form/order.scss";
 @import "main/form/page-order.scss";
 @import "main/form/user-information.scss";
-
-
-.vissually-hidden {
-  display: none;
-}
+*/

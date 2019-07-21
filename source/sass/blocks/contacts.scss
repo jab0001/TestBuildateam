@@ -1,39 +1,57 @@
 .contacts__title {
-  font-family: "OpenSans", "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+
   font-size: 18px;
   font-weight: bold;
   line-height: 1.67;
   text-align: left;
-  color: #000000;
+  color: $color-black;
 }
 
 .contacts__field,
 .contacts__value {
-  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 2;
+  text-align: left;
+  color: $color-grey;
+}
+
+.contacts__button {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.11;
+  text-align: center;
+  color: $color-grey;
+
+  &:hover {
+    color: #ffffff;
+
+    background-color: $color-grey;
+  }
+
+  &:focus {
+    color: rgba(255, 255, 255, 0.3);
+
+    background-color: $color-grey;
+  }
+}
+
+.contacts__link {
   font-size: 15px;
   font-weight: normal;
   line-height: 2;
   text-align: left;
   color: #444444;
-}
 
-.contacts__button {
-  font-family: "OpenSans", "Arial", sans-serif;
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 1.11;
-  text-align: center;
-  color: #444444;
-
-  text-decoration: none;
+  border-bottom: solid 1px $hvr_scnd_btn;
 
   &:hover {
-    background-color: #444444;
-    color: #ffffff;
+    color: $hvr_scnd_btn;
   }
 
   &:focus {
-    color: rgba(255, 255, 255, 0.3);
-    background-color: #444444;
+    opacity: 0.3;
   }
 }

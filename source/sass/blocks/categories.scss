@@ -5,52 +5,48 @@
 .categories__list {
   margin: 0;
   padding: 0;
-
   margin-top: 120px;
 }
 
 .categories__item-interior {
   min-height: 103px;
-  background-color: #63d1bb;
+
+  background-color: $btn_color;
 
   &:hover {
-    background-color: #59d5bc;
+    background-color: $hvr_btn;
   }
 
   &:focus {
-    background-color: #59d5bc;
+    background-color: $hvr_btn;
   }
 }
 
 .categories__item-toys {
   min-height: 103px;
-  background-color: #56c3b2;
+
+  background-color: $scnd_btn;
 
   &:hover {
-    background-color: #46c1ae;
+    background-color: $hvr_scnd_btn;
   }
 
   &:focus {
-    background-color: #46c1ae;
+    background-color: $hvr_scnd_btn;
   }
 }
 
 .categories__link {
   display: block;
+  width: 106px;
+  margin-left: 29px;
+  padding-top: 30px;
 
-  font-family: "OpenSans", "Arial", sans-serif;
   font-size: 19px;
   font-weight: bold;
   line-height: 1.26;
   text-align: left;
   color: #ffffff;
-
-  margin-left: 29px;
-  padding-top: 30px;
-
-  width: 106px;
-
-  text-decoration: none;
 
   &:focus {
     color: rgba(255, 255, 255, 0.3);

@@ -1,21 +1,25 @@
 .about-us__title {
-  font-family: "OpenSans", "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+
   font-size: 25px;
   font-weight: bold;
   line-height: 1.2;
   text-align: left;
-  color: #000000;
+  color: $color-black;
 }
 
-.about-us__description {
+.about-us__list {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
-.description-list__item {
-  font-family: "OpenSans", "Arial", sans-serif;
+.about_us__item {
   font-size: 17px;
   font-weight: bold;
   line-height: 1.18;
   text-align: left;
-  color: #000000;
+  color: $color-black;
 }

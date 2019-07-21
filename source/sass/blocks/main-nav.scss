@@ -1,18 +1,16 @@
-.main-nav {
-  &__list {
-    list-style: none;
-  }
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }
 
-.site-list__link {
-  font-family: "OpenSans", "Arial", sans-serif;
+.main-nav__link {
   font-size: 17px;
   font-weight: bold;
   line-height: 1.41;
   text-align: left;
-  color: #000000;
-
-  text-decoration: none;
+  color: $color-black;
 
   &:hover {
     color: rgba(0, 0, 0, 0.6);
@@ -28,7 +26,6 @@
   height: 14px;
 
   border: none;
-
   background-color: #ffffff;
   background-image: url("../../img/icon-menu-open.svg");
 

@@ -1,0 +1,25 @@
+body {
+  min-width: 320px;
+  font-family: "OpenSans", "Arial", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.vissually-hidden {
+  display: none;
+}
+
+.button {
+  display: block;
+  width: 256px;
+  height: 35px;
+  border: solid 2px #444444;
+  padding-top: 13px;
+}

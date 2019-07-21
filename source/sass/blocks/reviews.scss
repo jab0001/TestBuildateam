@@ -1,61 +1,76 @@
 .reviews__title {
-  font-family: "OpenSans", "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+
   font-size: 25px;
   font-weight: bold;
   line-height: 1.2;
   text-align: left;
-  color: #000000;
+  color: $color-black;
 }
 
 .reviews__list {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
 .reviews__text {
-  font-family: "OpenSans", "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+
   font-size: 15px;
   font-weight: normal;
   line-height: 2;
   text-align: left;
-  color: #444444;
+  color: $color-grey;
 }
 
-.reviews__author {
-  &-name {
-    font-family: "OpenSans", "Arial", sans-serif;
-    font-size: 17px;
-    font-weight: bold;
-    line-height: 1.41;
-    text-align: left;
-    color: #000000;
-    font-style: normal;
-  }
+.reviews__author-name {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.41;
+  text-align: left;
+  color: $color-black;
+  font-style: normal;
+}
 
-  &-email {
-    font-family: "OpenSans", "Arial", sans-serif;
-    font-size: 17px;
-    font-weight: normal;
-    line-height: 1.76;
-    text-align: left;
-    color: #444444;
-  }
+.reviews__author-email {
+  margin: 0;
+  padding: 0;
+
+  font-size: 17px;
+  font-weight: normal;
+  line-height: 1.76;
+  text-align: left;
+  color: $color-grey;
 }
 
 .reviews__toggles {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
   width: 260px;
   height: 52px;
+
   border: solid 1px #ececec;
   background-color: #ffffff;
+
+  list-style: none;
 }
 
 .reviews__toggle {
+  margin: 0;
+  padding: 0;
   width: 125px;
   height: 50px;
 
   cursor: pointer;
 }
 
-.reviews__toggle-back {
+.reviews__toggle--back {
   border: none;
   background: url("../../img/icon-left-arrow.svg") no-repeat #ffffff;
 
@@ -68,7 +83,7 @@
   }
 }
 
-.reviews__toggle-forward {
+.reviews__toggle--forward {
   border: none;
   background: url("../../img/icon-right-arrow.svg") no-repeat #ffffff;
 
@@ -82,22 +97,19 @@
 }
 
 .reviews__button {
-  font-family: "OpenSans", "Arial", sans-serif;
   font-size: 18px;
   font-weight: bold;
   line-height: 1.11;
   text-align: center;
-  color: #444444;
-
-  text-decoration: none;
+  color: $color-grey;
 
   &:hover {
-    background-color: #444444;
+    background-color: $color-grey;
     color: #ffffff;
   }
 
   &:focus {
     color: rgba(255, 255, 255, 0.3);
-    background-color: #444444;
+    background-color: $color-grey;
   }
 }

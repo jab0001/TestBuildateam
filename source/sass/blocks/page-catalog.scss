@@ -3,18 +3,9 @@
 }
 
 .page-catalog__title {
-  font-family: "OpenSans", "Arial", sans-serif;
   font-size: 27px;
   font-weight: bold;
   line-height: 1.11;
   text-align: center;
-  color: #000000;
-}
-
-.button {
-  display: block;
-  width: 256px;
-  height: 35px;
-  border: solid 2px #444444;
-  padding-top: 13px;
+  color: $color-black;
 }

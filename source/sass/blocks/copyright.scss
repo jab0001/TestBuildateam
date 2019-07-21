@@ -1,0 +1,23 @@
+.copyright__text {
+  margin: 0;
+  padding: 0;
+
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 0.95;
+  text-align: left;
+  color: $color-black;
+}
+
+.copyright__link {
+  fill: $btn_color;
+
+  &:hover {
+    fill: $hvr_scnd_btn;
+  }
+
+  &:focus {
+    fill: $hvr_scnd_btn;
+    opacity: 0.3;
+  }
+}
