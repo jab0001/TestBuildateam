@@ -7,18 +7,9 @@
   font-weight: bold;
   line-height: 1.11;
   text-align: center;
-  color: $color-black;
+  color: $color-dark;
 }
 
 .page-main {
   background: url("../../img/hero-mobile@1x.jpg") no-repeat;
-}
-
-.button {
-  display: block;
-  width: 256px;
-  height: 35px;
-  padding-top: 13px;
-
-  border: solid 2px $color-grey;
 }

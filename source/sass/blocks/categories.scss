@@ -11,28 +11,28 @@
 .categories__item-interior {
   min-height: 103px;
 
-  background-color: $btn_color;
+  background-color: $btn-color;
 
   &:hover {
-    background-color: $hvr_btn;
+    background-color: $hvr-btn-color;
   }
 
   &:focus {
-    background-color: $hvr_btn;
+    background-color: $hvr-btn-color;
   }
 }
 
 .categories__item-toys {
   min-height: 103px;
 
-  background-color: $scnd_btn;
+  background-color: $scnd-btn-color;
 
   &:hover {
-    background-color: $hvr_scnd_btn;
+    background-color: $hvr-scnd-btn-color;
   }
 
   &:focus {
-    background-color: $hvr_scnd_btn;
+    background-color: $hvr-scnd-btn-color;
   }
 }
 

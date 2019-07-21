@@ -12,14 +12,18 @@ img {
   height: auto;
 }
 
-.vissually-hidden {
-  display: none;
-}
+.vissually-hidden:not(:focus):not(:active),
+input[type="checkbox"].vissually-hidden,
+input[type="radio"].vissually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
 
-.button {
-  display: block;
-  width: 256px;
-  height: 35px;
-  border: solid 2px #444444;
-  padding-top: 13px;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }

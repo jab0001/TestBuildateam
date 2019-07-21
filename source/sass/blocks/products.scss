@@ -3,12 +3,12 @@
   width: 260px;
 }
 
-.products-list {
+.products__list {
   margin: 0;
   padding: 0;
 }
 
-.products-list__item {
+.products__item {
   width: 260px;
   min-height: 374px;
   margin-top: 30px;
@@ -26,14 +26,14 @@
   }
 }
 
-.products-list__item-title {
+.products__title {
   margin-left: 28px;
 
   font-size: 17px;
   font-weight: bold;
   line-height: 1.41;
   text-align: left;
-  color: $color-black;
+  color: $color-dark;
 
   &:hover {
     color: rgba(0, 0, 0, 0.6);
@@ -44,22 +44,22 @@
   }
 }
 
-.products-list__item-info {
+.products__info {
   margin-left: 28px;
 
   font-size: 13px;
   font-weight: normal;
   line-height: 2.31;
   text-align: left;
-  color: $color-grey;
+  color: $color-bright;
 }
 
-.products-list__item-price {
+.products__price {
   margin-left: 28px;
 
   font-size: 15px;
   font-weight: bold;
   line-height: 1.6;
   text-align: left;
-  color: $color-black;
+  color: $color-dark;
 }

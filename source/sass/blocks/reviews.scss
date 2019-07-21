@@ -6,7 +6,7 @@
   font-weight: bold;
   line-height: 1.2;
   text-align: left;
-  color: $color-black;
+  color: $color-dark;
 }
 
 .reviews__list {
@@ -24,7 +24,7 @@
   font-weight: normal;
   line-height: 2;
   text-align: left;
-  color: $color-grey;
+  color: $color-bright;
 }
 
 .reviews__author-name {
@@ -32,7 +32,7 @@
   font-weight: bold;
   line-height: 1.41;
   text-align: left;
-  color: $color-black;
+  color: $color-dark;
   font-style: normal;
 }
 
@@ -44,7 +44,7 @@
   font-weight: normal;
   line-height: 1.76;
   text-align: left;
-  color: $color-grey;
+  color: $color-bright;
 }
 
 .reviews__toggles {
@@ -68,24 +68,16 @@
   height: 50px;
 
   cursor: pointer;
-}
 
-.reviews__toggle--back {
-  border: none;
-  background: url("../../img/icon-left-arrow.svg") no-repeat #ffffff;
-
-  &:hover {
-    opacity: 0.6;
+  &--back {
+    border: none;
+    background: url("../../img/icon-left-arrow.svg") no-repeat #ffffff;
   }
 
-  &:focus {
-    opacity: 0.3;
+  &--forward {
+    border: none;
+    background: url("../../img/icon-right-arrow.svg") no-repeat #ffffff;
   }
-}
-
-.reviews__toggle--forward {
-  border: none;
-  background: url("../../img/icon-right-arrow.svg") no-repeat #ffffff;
 
   &:hover {
     opacity: 0.6;
@@ -101,15 +93,15 @@
   font-weight: bold;
   line-height: 1.11;
   text-align: center;
-  color: $color-grey;
+  color: $color-bright;
 
   &:hover {
-    background-color: $color-grey;
+    background-color: $color-bright;
     color: #ffffff;
   }
 
   &:focus {
     color: rgba(255, 255, 255, 0.3);
-    background-color: $color-grey;
+    background-color: $color-bright;
   }
 }

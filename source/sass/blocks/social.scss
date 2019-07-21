@@ -7,11 +7,11 @@
 
 .social__link {
   &:hover {
-    fill: $hvr_scnd_btn;
+    fill: $hvr-scnd-btn-color;
   }
 
   &:focus {
-    fill: $hvr_scnd_btn;
+    fill: $hvr-scnd-btn-color;
     opacity: 0.3;
   }
 }

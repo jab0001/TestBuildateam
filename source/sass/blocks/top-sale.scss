@@ -8,7 +8,7 @@
   font-weight: bold;
   line-height: 1.2;
   text-align: left;
-  color: $color-black;
+  color: $color-dark;
 }
 
 .top-sale__status {
@@ -25,7 +25,7 @@
   line-height: 1.6;
   letter-spacing: normal;
   text-align: left;
-  color: $color-grey;
+  color: $color-bright;
 }
 
 .top-sale__field,
@@ -34,7 +34,7 @@
   font-weight: normal;
   line-height: 1.33;
   text-align: left;
-  color: $color-grey;
+  color: $color-bright;
 }
 
 .top-sale__price {
@@ -42,7 +42,7 @@
   font-weight: bold;
   line-height: 1.41;
   text-align: center;
-  color: $color-grey;
+  color: $color-bright;
 }
 
 .top-sale__button {
@@ -50,19 +50,19 @@
   font-weight: bold;
   line-height: 1.18;
   text-align: center;
-  color: $color-grey;
+  color: $color-bright;
 
   text-decoration: none;
 
   &:hover {
     color: #ffffff;
 
-    background-color: $color-grey;
+    background-color: $color-bright;
   }
 
   &:focus {
     color: rgba(255, 255, 255, 0.3);
 
-    background-color: $color-grey;
+    background-color: $color-bright;
   }
 }
