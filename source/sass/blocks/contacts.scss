@@ -1,0 +1,57 @@
+.contacts__title {
+  margin: 0;
+  padding: 0;
+
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.67;
+  text-align: left;
+  color: $color-dark;
+}
+
+.contacts__field,
+.contacts__value {
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 2;
+  text-align: left;
+  color: $color-bright;
+}
+
+.contacts__button {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.11;
+  text-align: center;
+  color: $color-bright;
+
+  &:hover {
+    color: #ffffff;
+
+    background-color: $color-bright;
+  }
+
+  &:focus {
+    color: rgba(255, 255, 255, 0.3);
+
+    background-color: $color-bright;
+  }
+}
+
+.contacts__link {
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 2;
+  text-align: left;
+  color: #444444;
+
+  border-bottom: solid 1px $hvr-scnd-btn-color;
+
+  &:hover {
+    color: $hvr-scnd-btn-color;
+  }
+
+  &:focus {
+    opacity: 0.3;
+  }
+}

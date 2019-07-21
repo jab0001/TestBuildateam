@@ -1,0 +1,68 @@
+.top-sale {
+  width: 260px;
+  margin: 0 auto;
+}
+
+.top-sale__item {
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: left;
+  color: $color-dark;
+}
+
+.top-sale__status {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.18;
+  text-align: left;
+  color: $btn_color;
+}
+
+.top-sale__description {
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 1.6;
+  letter-spacing: normal;
+  text-align: left;
+  color: $color-bright;
+}
+
+.top-sale__field,
+.top-sale__value {
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 1.33;
+  text-align: left;
+  color: $color-bright;
+}
+
+.top-sale__price {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.41;
+  text-align: center;
+  color: $color-bright;
+}
+
+.top-sale__button {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.18;
+  text-align: center;
+  color: $color-bright;
+
+  text-decoration: none;
+
+  &:hover {
+    color: #ffffff;
+
+    background-color: $color-bright;
+  }
+
+  &:focus {
+    color: rgba(255, 255, 255, 0.3);
+
+    background-color: $color-bright;
+  }
+}

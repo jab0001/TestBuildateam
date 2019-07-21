@@ -1,0 +1,17 @@
+.social__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.social__link {
+  &:hover {
+    fill: $hvr-scnd-btn-color;
+  }
+
+  &:focus {
+    fill: $hvr-scnd-btn-color;
+    opacity: 0.3;
+  }
+}

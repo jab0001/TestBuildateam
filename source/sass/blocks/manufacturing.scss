@@ -1,0 +1,57 @@
+.manufacturing {
+  margin: 0 auto;
+  width: 260px;
+  min-height: 503px;
+  margin-top: 30px;
+  margin-bottom: 58px;
+
+  border: 1px solid #ececec;
+}
+
+.manufacturing__title {
+  margin-left: 91px;
+  margin-bottom: 26px;
+
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.41;
+  text-align: left;
+  color: $color-dark;
+}
+
+.manufacturing__info {
+  margin: 0;
+  margin-top: 34px;
+  margin-left: 34px;
+  margin-right: 43px;
+
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.85;
+  text-align: left;
+  color: $color-bright;
+}
+
+.manufacturing__button {
+  width: 188px;
+  margin-top: 20px;
+  margin-left: 34px;
+
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 0.94;
+  text-align: center;
+  color: $color-bright;
+
+  &:hover {
+    color: #ffffff;
+
+    background-color: $color-bright;
+  }
+
+  &:focus {
+    color: rgba(255, 255, 255, 0.3);
+
+    background-color: $color-bright;
+  }
+}
