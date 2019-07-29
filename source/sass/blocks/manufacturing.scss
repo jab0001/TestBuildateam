@@ -2,15 +2,19 @@
   margin: 0 auto;
   width: 260px;
   min-height: 503px;
-  margin-top: 30px;
+  margin-top: 32px;
   margin-bottom: 58px;
 
   border: 1px solid #ececec;
 }
 
 .manufacturing__title {
-  margin-left: 91px;
-  margin-bottom: 26px;
+  margin: 0;
+  padding: 0;
+  margin-left: 90px;
+  margin-top: 23px;
+  margin-bottom: 24px;
+
 
   font-size: 17px;
   font-weight: bold;
@@ -21,7 +25,8 @@
 
 .manufacturing__info {
   margin: 0;
-  margin-top: 34px;
+  padding: 0;
+  margin-top: 24px;
   margin-left: 34px;
   margin-right: 43px;
 
@@ -34,14 +39,17 @@
 
 .manufacturing__button {
   width: 188px;
-  margin-top: 20px;
+  margin-top: 25px;
   margin-left: 34px;
+  padding-top: 15px;
+  height: 33px;
 
   font-size: 17px;
   font-weight: bold;
   line-height: 0.94;
   text-align: center;
   color: $color-bright;
+  text-transform: uppercase;
 
   &:hover {
     color: #ffffff;
@@ -53,5 +61,97 @@
     color: rgba(255, 255, 255, 0.3);
 
     background-color: $color-bright;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .manufacturing {
+    display: flex;
+    flex-direction: column;
+    width: 668px;
+    margin-top: 32px;
+    margin-bottom: 64px;
+  }
+
+  .manufacturing__video {
+    width: 668px;
+    height: 455px;
+
+    order: -1;
+  }
+
+  .manufacturing__video img {
+    width: 668px;
+    height: 455px;
+  }
+
+  .manufacturing__title {
+    margin: 0;
+    margin-left: 108px;
+    margin-top: 38px;
+    margin-bottom: 24px;
+
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .manufacturing__info {
+    margin: 0;
+    margin-left: 40px;
+    margin-top: 9px;
+    width: 590px;
+
+    font-size: 15px;
+    line-height: 2;
+  }
+
+  .manufacturing__button {
+    margin: 0;
+    margin-left: 42px;
+    margin-top: 35px;
+    margin-bottom: 45px;
+    width: 580px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .manufacturing {
+    flex-wrap: wrap;
+    width: 1050px;
+    margin-top: 58px;
+    margin-bottom: 104px;
+    height: 453px;
+    min-height: 450px;
+  }
+
+  .manufacturing__video {
+    width: 682px;
+    height: 453px;
+  }
+
+  .manufacturing__video img {
+    width: 682px;
+    height: 453px;
+  }
+
+  .manufacturing__title {
+    width: 148px;
+    margin: 0;
+    margin-left: 40px;
+    margin-top: 94px;
+  }
+
+  .manufacturing__info {
+    margin: 0;
+    margin-top: 33px;
+    margin-left: 40px;
+    width: 250px;
+  }
+
+  .manufacturing__button {
+    width: 226px;
+    margin: 0;
+    margin-left: 41px;
+    margin-top: 46px;
   }
 }

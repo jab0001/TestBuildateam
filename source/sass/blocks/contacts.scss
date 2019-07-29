@@ -1,6 +1,11 @@
+.contacts {
+  margin-top: 87px;
+}
+
 .contacts__title {
   margin: 0;
   padding: 0;
+  padding-left: 28px;
 
   font-size: 18px;
   font-weight: bold;
@@ -9,8 +14,22 @@
   color: $color-dark;
 }
 
-.contacts__field,
+.contacts__field {
+  width: 72px;
+  padding-bottom: 26px;
+
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 2;
+  text-align: left;
+  vertical-align: top;
+  color: $color-bright;
+}
+
 .contacts__value {
+  display: block;
+  width: 145px;
+
   font-size: 15px;
   font-weight: normal;
   line-height: 2;
@@ -19,11 +38,16 @@
 }
 
 .contacts__button {
+  margin-top: 38px;
+  margin-left: 30px;
+
   font-size: 18px;
   font-weight: bold;
   line-height: 1.11;
   text-align: center;
   color: $color-bright;
+
+  text-transform: uppercase;
 
   &:hover {
     color: #ffffff;
@@ -53,5 +77,111 @@
 
   &:focus {
     opacity: 0.3;
+  }
+}
+
+.contacts__table {
+  margin-left: 27px;
+  margin-top: 24px;
+  margin-bottom: 35px;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    margin-top: 147px;
+  }
+
+  .contacts__title {
+    padding-left: 47px;
+
+    font-size: 43px;
+    line-height: 1.16;
+  }
+
+  .contacts__table {
+    margin-left: 48px;
+    margin-top: 47px;
+    margin-bottom: 55px;
+  }
+
+  .contacts__table tbody {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .contacts__table tr {
+    display: flex;
+    width: 335px;
+  }
+
+  .contacts__field,
+  .contacts__value {
+    font-size: 17px;
+    line-height: 1.76;
+  }
+
+  .contacts__button {
+    margin: 0;
+    margin-top: 51px;
+    margin-left: 272px;
+    width: 225px;
+  }
+
+  .contacts__link {
+    font-size: 17px;
+    line-height: 1.76;
+  }
+
+  .contacts__map {
+    width: 768px;
+    height: 457px;
+  }
+
+  .contacts__value {
+    padding-left: 4px;
+    width: 225px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    height: 500px;
+  }
+
+  .contacts__title {
+    padding-left: 220px;
+    padding-top: 80px;
+
+    font-size: 53px;
+    line-height: 1.08;
+  }
+
+  .contacts__button {
+    margin-left: 226px;
+    margin-top: 25px;
+  }
+
+  .contacts__map {
+    margin-top: 10px;
+    width: 525px;
+    height: 457px;
+
+    order: 4;
+  }
+
+  .contacts__table tbody {
+    flex-direction: column;
+  }
+
+  .contacts__table {
+    display: block;
+    margin-top: 50px;
+    margin-left: 223px;
+    width: 300px;
   }
 }
