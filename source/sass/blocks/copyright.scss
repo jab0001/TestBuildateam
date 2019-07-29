@@ -1,6 +1,7 @@
 .copyright__text {
   margin: 0;
   padding: 0;
+  margin-top: 4px;
 
   font-size: 19px;
   font-weight: bold;
@@ -10,6 +11,13 @@
 }
 
 .copyright__link {
+  display: flex;
+  width: 182px;
+  padding-left: 69px;
+  padding-top: 48px;
+  padding-bottom: 30px;
+  justify-content: space-between;
+
   fill: $btn-color;
 
   &:hover {
@@ -20,5 +28,24 @@
     fill: $hvr-scnd-btn-color;
 
     opacity: 0.3;
+  }
+}
+
+.copyright {
+  width: 320px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright__link {
+    padding-top: 57px;
+    padding-left: 77px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright__link {
+    padding-top: 58px;
+    padding-left: 176px;
   }
 }

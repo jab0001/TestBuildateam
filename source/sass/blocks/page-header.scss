@@ -7,3 +7,65 @@
     opacity: 0.3;
   }
 }
+
+.page-header {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.page-header__logo-image {
+  margin-left: 116px;
+  margin-top: 22px;
+  margin-right: 67px;
+  margin-bottom: 18px;
+  width: 86px;
+  height: 35px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    position: relative;
+    width: 772px;
+  }
+
+  .page-header__logo {
+    position: absolute;
+
+    top: 25px;
+    left: 50px;
+    z-index: 5;
+
+    margin: 0;
+  }
+
+  .page-header__logo img {
+    margin: 0;
+
+    width: 112px;
+    height: 46px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    position: relative;
+    width: 1150px;
+  }
+
+  .page-header__logo {
+    position: absolute;
+
+    top: 10px;
+    left: 500px;
+    z-index: 5;
+
+    margin: 0;
+  }
+
+  .page-header__logo img {
+    margin: 0;
+
+    width: 149px;
+    height: 72px;
+  }
+}
