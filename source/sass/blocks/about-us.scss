@@ -1,7 +1,20 @@
 .about-us {
+  position: relative;
   margin-top: 70px;
   padding-left: 30px;
   height: 100%;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -35px;
+    width: 325px;
+    right: 5px;
+    height: 6px;
+
+    background: url("../../img/bg-zigzag-line.svg");
+    background-size: 100% auto;
+  }
 }
 
 .about-us__title {
@@ -34,6 +47,52 @@
   line-height: 1.18;
   text-align: left;
   color: $color-dark;
+
+  &--ecology {
+    width: 175px;
+
+    background: url("../../img/icon-feature-flower.svg") no-repeat;
+    background-position-x: 8px;
+  }
+
+  &--scandinavian {
+    width: 200px;
+
+    background: url("../../img/icon-feature-money.svg") no-repeat;
+    background-position-y: 2px;
+  }
+
+  &--likes {
+    width: 181px;
+
+    background: url("../../img/icon-feature-heart.svg") no-repeat;
+    background-position-x: 8px;
+    background-position-y: 6px;
+  }
+
+  &--related {
+    width: 211px;
+
+    background: url("../../img/icon-feature-ball.svg") no-repeat;
+    background-position-x: 4px;
+    background-position-y: 4px;
+  }
+
+  &--support {
+    width: 251px;
+
+    background: url("../../img/icon-feature-rocket.svg") no-repeat;
+    background-position-x: -2px;
+    background-position-y: 5px;
+  }
+
+  &--supplied {
+    width: 198px;
+
+    background: url("../../img/icon-feature-gift.svg") no-repeat;
+    background-position-x: 3px;
+    background-position-y: 3px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -41,6 +100,17 @@
     margin-top: 117px;
     padding-left: 47px;
     padding-right: 47px;
+
+    &::after {
+      top: -65px;
+      width: 775px;
+      right: -5px;
+      height: 15px;
+
+      background: url("../../img/bg-zigzag-line.svg");
+      background-size: 100% auto;
+      transform: rotate(180deg);
+    }
   }
 
   .about-us__title {
@@ -55,6 +125,60 @@
 
     font-size: 20px;
     line-height: 1.1;
+
+    &--ecology {
+      width: 205px;
+      padding-left: 6px;
+
+      background: url("../../img/icon-feature-flower.svg") no-repeat;
+      background-position-x: 15px;
+      background-position-y: 4px;
+    }
+
+    &--scandinavian {
+      width: 235px;
+      padding-left: 6px;
+
+      background: url("../../img/icon-feature-money.svg") no-repeat;
+      background-position-x: 6px;
+      background-position-y: 4px;
+    }
+
+    &--likes {
+      width: 212px;
+      padding-left: 6px;
+
+      background: url("../../img/icon-feature-heart.svg") no-repeat;
+      background-position-x: 14px;
+      background-position-y: 9px;
+    }
+
+    &--related {
+      width: 248px;
+      margin-left: 54px;
+
+      background: url("../../img/icon-feature-ball.svg") no-repeat;
+      background-position-x: 4px;
+      background-position-y: 6px;
+    }
+
+    &--support {
+      width: 295px;
+      margin-left: 54px;
+
+      background: url("../../img/icon-feature-rocket.svg") no-repeat;
+      background-position-x: -2px;
+      background-position-y: 7px;
+    }
+
+    &--supplied {
+      width: 233px;
+      margin-left: 54px;
+
+      background: url("../../img/icon-feature-gift.svg") no-repeat;
+      background-position-x: 3px;
+      background-position-y: 5px;
+    }
   }
 
   .about-us__list {
@@ -69,6 +193,17 @@
 @media (min-width: $desktop-width) {
   .about-us {
     margin-top: 155px;
+
+    &::after {
+      top: -81px;
+      width: 1055px;
+      right: 47px;
+      height: 21px;
+
+      background: url("../../img/bg-zigzag-line.svg");
+      background-size: 100% auto;
+      transform: rotate(180deg);
+    }
   }
 
   .about-us__title {
@@ -79,12 +214,67 @@
   }
 
   .about-us__list {
-    margin-left: 178px;
+    margin-left: 173px;
     margin-top: 45px;
     width: 700px;
   }
 
   .about-us__item {
-    width: 350px;
+    &--ecology {
+      width: 205px;
+      padding-right: 145px;
+
+      background: url("../../img/icon-feature-flower.svg") no-repeat;
+      background-position-x: 15px;
+      background-position-y: 4px;
+    }
+
+    &--scandinavian {
+      width: 235px;
+      padding-right: 115px;
+
+      background: url("../../img/icon-feature-money.svg") no-repeat;
+      background-position-x: 6px;
+      background-position-y: 4px;
+    }
+
+    &--likes {
+      width: 212px;
+      padding-right: 138px;
+
+      background: url("../../img/icon-feature-heart.svg") no-repeat;
+      background-position-x: 14px;
+      background-position-y: 9px;
+    }
+
+    &--related {
+      width: 248px;
+      padding-right: 102px;
+      margin: 0;
+
+      background: url("../../img/icon-feature-ball.svg") no-repeat;
+      background-position-x: 2px;
+      background-position-y: 7px;
+    }
+
+    &--support {
+      width: 295px;
+      padding-right: 55px;
+      margin: 0;
+
+      background: url("../../img/icon-feature-rocket.svg") no-repeat;
+      background-position-x: -2px;
+      background-position-y: 8px;
+    }
+
+    &--supplied {
+      width: 233px;
+      padding-right: 117px;
+      margin: 0;
+
+      background: url("../../img/icon-feature-gift.svg") no-repeat;
+      background-position-x: 2px;
+      background-position-y: 5px;
+    }
   }
 }
