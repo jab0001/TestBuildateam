@@ -1,8 +1,9 @@
 .page-catalog__title {
+  position: relative;
   margin: 0 auto;
   padding: 0;
-  padding-top: 73px;
-  padding-bottom: 73px;
+  padding-top: 72px;
+  padding-bottom: 75px;
   width: 320px;
 
   font-size: 27px;
@@ -27,6 +28,18 @@
 
     font-size: 43px;
     line-height: 1.16;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 173px;
+      right: 1px;
+      width: 769px;
+      height: 24px;
+
+      background: url("../../img/bg-zigzag-fill.svg");
+      background-size: 100% auto;
+    }
   }
 }
 
@@ -43,5 +56,15 @@
 
     font-size: 53px;
     line-height: 1.08;
+
+    &::before {
+      top: 194px;
+      right: 1px;
+      width: 1150px;
+      height: 34px;
+
+      background: url("../../img/bg-zigzag-fill.svg");
+      background-size: 100% auto;
+    }
   }
 }
