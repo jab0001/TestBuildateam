@@ -1,5 +1,13 @@
 .categories__item {
   list-style: none;
+
+  &--interior {
+    background-color: $hvr-btn-color;
+  }
+
+  &--toys {
+    background-color: $hvr-scnd-btn-color;
+  }
 }
 
 .categories__list {
@@ -8,12 +16,15 @@
   margin-top: 122px;
 }
 
-.categories__item-interior {
-  min-height: 103px;
-
+.categories__link--interior {
   background-color: $btn-color;
 
   &:hover {
+    padding-top: 20px;
+    height: 83px;
+
+    top: -5px;
+
     background-color: $hvr-btn-color;
   }
 
@@ -22,12 +33,15 @@
   }
 }
 
-.categories__item-toys {
-  min-height: 103px;
-
+.categories__link--toys {
   background-color: $scnd-btn-color;
 
   &:hover {
+    padding-top: 20px;
+    height: 83px;
+
+    top: -5px;
+
     background-color: $hvr-scnd-btn-color;
   }
 
@@ -38,13 +52,12 @@
 
 .categories__link {
   display: block;
-  width: 100%;
-  height: 103px;
-  box-sizing: border-box;
+  position: relative;
+  height: 78px;
+  box-sizing: content-box;
   padding-left: 29px;
   padding-top: 25px;
   padding-right: 185px;
-  position: relative;
 
   font-size: 19px;
   font-weight: bold;
@@ -52,7 +65,21 @@
   text-align: left;
   color: #ffffff;
 
-  &--img-interior {
+  &:hover svg {
+    opacity: 0.7;
+  }
+
+  &:focus svg {
+    opacity: 0.3;
+  }
+
+  &:focus {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.categories__img {
+  &--interior {
     position: absolute;
     width: 40px;
     height: 62px;
@@ -62,7 +89,7 @@
     fill: #149080;
   }
 
-  &--img-toys {
+  &--toys {
     position: absolute;
     width: 60px;
     height: 60px;
@@ -70,14 +97,6 @@
     right: 27px;
 
     fill: #149080;
-  }
-
-  &:hover {
-    opacity: 0.7;
-  }
-
-  &:focus {
-    opacity: 0.3;
   }
 }
 
@@ -101,15 +120,31 @@
     font-size: 20px;
     font-weight: bold;
     line-height: 1.5;
+  }
 
-    &--img-interior {
+  .categories__img {
+    &--interior {
       top: 29px;
       right: 36px;
     }
 
-    &--img-toys {
+    &--toys {
       top: 31px;
       right: 34px;
+    }
+  }
+
+  .categories__link--interior {
+    &:hover {
+      top: -5px;
+      padding-bottom: 21px;
+    }
+  }
+
+  .categories__link--toys {
+    &:hover {
+      top: -5px;
+      padding-bottom: 21px;
     }
   }
 }

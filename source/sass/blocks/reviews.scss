@@ -129,6 +129,11 @@
     position: relative;
 
     background: url("../../img/review@1x.jpg") no-repeat;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/review@2x.jpg");
+      background-size: 350px auto;
+    }
   }
 
   .reviews__title {
@@ -192,6 +197,11 @@
     min-height: 470px;
 
     background: url("../../img/review@1x.jpg") no-repeat 50px 10px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/review@2x.jpg");
+      background-size: 350px auto;
+    }
   }
 
   .reviews__title {
