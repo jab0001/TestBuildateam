@@ -137,7 +137,7 @@
   .contacts__table {
     margin-left: 48px;
     margin-top: 47px;
-    margin-bottom: 55px;
+    margin-bottom: 53px;
   }
 
   .contacts__table tbody {
@@ -170,6 +170,7 @@
   }
 
   .contacts__map {
+    margin-left: 2px;
     width: 768px;
     height: 457px;
   }
@@ -225,12 +226,14 @@
     margin-top: 25px;
   }
 
+  .contacts picture {
+    order: 4;
+  }
+
   .contacts__map {
-    margin-top: 10px;
+    margin-top: 11px;
     width: 525px;
     height: 457px;
-
-    order: 4;
   }
 
   .contacts__table tbody {

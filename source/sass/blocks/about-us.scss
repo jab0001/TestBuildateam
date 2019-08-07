@@ -104,7 +104,6 @@
     &::after {
       top: -65px;
       width: 775px;
-      right: -5px;
       height: 15px;
 
       background: url("../../img/bg-zigzag-line.svg");
@@ -121,72 +120,86 @@
   .about-us__item {
     padding-top: 57px;
     padding-bottom: 54px;
-    width: 300px;
+    width: 330px;
+    box-sizing: border-box;
 
     font-size: 20px;
     line-height: 1.1;
 
     &--ecology {
-      width: 205px;
       padding-left: 6px;
+      padding-right: 110px;
 
       background: url("../../img/icon-feature-flower.svg") no-repeat;
-      background-position-x: 15px;
-      background-position-y: 4px;
+      background-position-x: 14px;
+      background-position-y: 3px;
+
+      order: 1;
     }
 
     &--scandinavian {
-      width: 235px;
       padding-left: 6px;
+      padding-right: 60px;
 
       background: url("../../img/icon-feature-money.svg") no-repeat;
       background-position-x: 6px;
       background-position-y: 4px;
+
+      order: 3;
     }
 
     &--likes {
-      width: 212px;
       padding-left: 6px;
+      padding-right: 110px;
 
       background: url("../../img/icon-feature-heart.svg") no-repeat;
       background-position-x: 14px;
       background-position-y: 9px;
+
+      order: 5;
     }
 
     &--related {
-      width: 248px;
-      margin-left: 54px;
+      padding-left: 11px;
+      padding-right: 60px;
 
       background: url("../../img/icon-feature-ball.svg") no-repeat;
-      background-position-x: 4px;
+      background-position-x: 12px;
       background-position-y: 6px;
+
+      order: 2;
     }
 
     &--support {
-      width: 295px;
-      margin-left: 54px;
+      padding-left: 11px;
+      padding-right: 25px;
 
       background: url("../../img/icon-feature-rocket.svg") no-repeat;
-      background-position-x: -2px;
+      background-position-x: 2px;
       background-position-y: 7px;
+
+      order: 4;
     }
 
     &--supplied {
-      width: 233px;
-      margin-left: 54px;
+      padding-left: 11px;
+      padding-right: 60px;
 
       background: url("../../img/icon-feature-gift.svg") no-repeat;
-      background-position-x: 3px;
+      background-position-x: 12px;
       background-position-y: 5px;
+
+      order: 6;
     }
   }
 
   .about-us__list {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     margin-top: 47px;
-    height: 465px;
+    min-height: 465px;
+    width: 670px;
   }
 }
 
@@ -215,14 +228,15 @@
 
   .about-us__list {
     margin-left: 173px;
-    margin-top: 45px;
+    margin-top: 46px;
     width: 700px;
   }
 
   .about-us__item {
+    width: 350px;
+
     &--ecology {
-      width: 205px;
-      padding-right: 145px;
+      padding-right: 120px;
 
       background: url("../../img/icon-feature-flower.svg") no-repeat;
       background-position-x: 15px;
@@ -230,8 +244,7 @@
     }
 
     &--scandinavian {
-      width: 235px;
-      padding-right: 115px;
+      padding-right: 90px;
 
       background: url("../../img/icon-feature-money.svg") no-repeat;
       background-position-x: 6px;
@@ -239,28 +252,22 @@
     }
 
     &--likes {
-      width: 212px;
-      padding-right: 138px;
-
       background: url("../../img/icon-feature-heart.svg") no-repeat;
       background-position-x: 14px;
       background-position-y: 9px;
     }
 
     &--related {
-      width: 248px;
-      padding-right: 102px;
-      margin: 0;
+      padding-right: 60px;
+      padding-left: 4px;
 
       background: url("../../img/icon-feature-ball.svg") no-repeat;
-      background-position-x: 2px;
+      background-position-x: 9px;
       background-position-y: 7px;
     }
 
     &--support {
-      width: 295px;
-      padding-right: 55px;
-      margin: 0;
+      padding-left: 4px;
 
       background: url("../../img/icon-feature-rocket.svg") no-repeat;
       background-position-x: -2px;
@@ -268,12 +275,11 @@
     }
 
     &--supplied {
-      width: 233px;
-      padding-right: 117px;
-      margin: 0;
+      padding-right: 60px;
+      padding-left: 4px;
 
       background: url("../../img/icon-feature-gift.svg") no-repeat;
-      background-position-x: 2px;
+      background-position-x: 8px;
       background-position-y: 5px;
     }
   }

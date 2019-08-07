@@ -102,17 +102,19 @@
     }
   }
 
+  .manufacturing picture {
+    order: -1;
+  }
+
   .manufacturing img {
     width: 668px;
     height: 455px;
-
-    order: -1;
   }
 
   .manufacturing__title {
     margin: 0;
     margin-left: 108px;
-    margin-top: 38px;
+    margin-top: 28px;
     margin-bottom: 24px;
 
     font-size: 20px;
