@@ -191,7 +191,7 @@
 
 @media (min-width: $desktop-width) {
   .products {
-    margin-left: 50px;
+    margin-left: 0;
     margin-top: 80px;
     width: 1110px;
   }
@@ -209,7 +209,7 @@
   .products__item {
     margin: 0;
     margin-top: 52px;
-    margin-right: 52px;
+    margin-left: 51px;
     width: 314px;
 
     &::before {

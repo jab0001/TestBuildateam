@@ -114,10 +114,11 @@
 @media (min-width: $tablet-width) {
   .main-nav__img {
     top: 36px;
+    left: 32px;
   }
 
   .main-nav {
-    width: 772px;
+    width: 768px;
   }
 
   .main-nav__toggle {
@@ -148,15 +149,14 @@
 
       width: 82px;
       height: 88px;
-      margin-left: 372px;
+      margin-left: 370px;
 
       border-left: 1px solid #ececec;
     }
 
     &--buy {
       order: 2;
-
-      width: 316px;
+      width: 312px;
       height: 88px;
 
       border-left: 1px solid #ececec;
@@ -177,7 +177,7 @@
     }
 
     &--delivery {
-      flex-grow: 1;
+      width: 412px;
 
       border-top: 1px solid #ececec;
 
@@ -195,7 +195,7 @@
 
   .main-nav__link {
     display: block;
-    padding-left: 37px;
+    padding-left: 35px;
     padding-top: 18px;
 
     font-size: 15px;
@@ -205,17 +205,17 @@
     color: $color-dark;
 
     &--delivery {
-      padding-left: 132px;
+      padding-left: 134px;
 
       font-weight: normal;
       color: $color-bright;
     }
 
     &--buy {
-      width: 286px;
+      width: 282px;
       height: 57px;
       padding-top: 31px;
-      padding-left: 30px;
+      padding-left: 32px;
 
       font-size: 17px;
       font-weight: bold;

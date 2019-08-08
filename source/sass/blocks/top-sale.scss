@@ -106,13 +106,13 @@
   margin-left: 26px;
 }
 
-.top-sale__table tr {
+.top-sale__field {
   position: relative;
 
   &::before {
     content: "";
     position: absolute;
-    top: 29px;
+    top: 30px;
     width: 260px;
     height: 2px;
 
@@ -129,14 +129,14 @@
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    width: 772px;
+    width: 768px;
     margin-top: 44px;
 
     &::before {
       content: "";
       position: absolute;
       top: -56px;
-      width: 771px;
+      width: 768px;
       height: 24px;
 
       background: url("../../img/bg-zigzag-fill.svg") no-repeat 0 0;
@@ -212,7 +212,7 @@
     width: 300px;
   }
 
-  .top-sale__table tr {
+  .top-sale__field {
     &::before {
       width: 291px;
       height: 2px;
@@ -259,7 +259,6 @@
   .top-sale__table {
     margin: 0;
     padding: 0;
-    margin-top: 56px;
   }
 
   .top-sale__wrapper {
@@ -272,6 +271,7 @@
     padding: 0;
     margin-top: 49px;
     margin-left: 4px;
+    margin-bottom: 58px;
   }
 
   .top-sale__price {
