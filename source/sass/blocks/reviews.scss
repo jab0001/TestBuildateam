@@ -84,12 +84,12 @@
 
   &--back {
     border: none;
-    background: url("../../img/icon-left-arrow.svg") no-repeat #ffffff 50%;
+    background: url("../img/icon-left-arrow.svg") no-repeat #ffffff 50%;
   }
 
   &--forward {
     border: none;
-    background: url("../../img/icon-right-arrow.svg") no-repeat #ffffff 33px;
+    background: url("../img/icon-right-arrow.svg") no-repeat #ffffff 33px;
   }
 
   &:hover {
@@ -128,10 +128,10 @@
     min-height: 457px;
     position: relative;
 
-    background: url("../../img/review@1x.jpg") no-repeat;
+    background: url("../img/review@1x.jpg") no-repeat;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/review@2x.jpg");
+      background-image: url("../img/review@2x.jpg");
       background-size: 350px auto;
     }
   }
@@ -196,10 +196,10 @@
   .reviews {
     min-height: 470px;
 
-    background: url("../../img/review@1x.jpg") no-repeat 50px 10px;
+    background: url("../img/review@1x.jpg") no-repeat 50px 10px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/review@2x.jpg");
+      background-image: url("../img/review@2x.jpg");
       background-size: 350px auto;
     }
   }
