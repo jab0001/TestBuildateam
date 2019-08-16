@@ -63,7 +63,7 @@
 
   border: none;
   background-color: #ffffff;
-  background-image: url("../../img/icon-menu-open.svg");
+  background-image: url("../img/icon-menu-open.svg");
 
   cursor: pointer;
 }
@@ -78,7 +78,7 @@
 
   border: none;
   background-color: #ffffff;
-  background-image: url("../../img/icon-menu-close.svg");
+  background-image: url("../img/icon-menu-close.svg");
 
   cursor: pointer;
 }
@@ -177,7 +177,7 @@
     }
 
     &--delivery {
-      width: 412px;
+      width: 410px;
 
       border-top: 1px solid #ececec;
 
@@ -205,7 +205,7 @@
     color: $color-dark;
 
     &--delivery {
-      padding-left: 134px;
+      padding-left: 129px;
 
       font-weight: normal;
       color: $color-bright;
