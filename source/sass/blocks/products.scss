@@ -12,7 +12,7 @@
 .products__item {
   position: relative;
   width: 258px;
-  margin-bottom: 29px;
+  margin-bottom: 30px;
 
   list-style: none;
 
@@ -25,7 +25,7 @@
     width: 204px;
     height: 1px;
 
-    bottom: 73px;
+    bottom: 72px;
     right: 28px;
 
     background-color: #ececec;
@@ -113,7 +113,7 @@
 
 @media (min-width: $tablet-width) {
   .products {
-    margin-left: 52px;
+    margin-left: 50px;
     margin-top: 80px;
   }
 
@@ -200,7 +200,7 @@
   .products__item {
     margin: 0;
     margin-top: 52px;
-    margin-left: 51px;
+    margin-left: 50px;
     width: 314px;
     min-height: 657px;
 
@@ -216,11 +216,12 @@
 
   .products__title {
     padding-left: 27px;
-    padding-top: 14px;
+    padding-top: 16px;
   }
 
   .products__info {
     padding-left: 25px;
+    margin-top: 4px;
   }
 
   .products__price {
