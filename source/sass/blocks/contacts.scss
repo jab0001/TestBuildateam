@@ -79,6 +79,10 @@
 }
 
 .contacts__link {
+  display: block;
+  height: 30px;
+  width: 178px;
+
   font-size: 15px;
   font-weight: normal;
   line-height: 2;
@@ -115,18 +119,6 @@
     margin-top: 147px;
     width: 100%;
     position: relative;
-
-    &::before {
-      content: "";
-
-      position: absolute;
-      width: 47px;
-      height: 81px;
-      top: -16px;
-      right: 53px;
-
-      background: url("../img/icon-flag.svg") no-repeat;
-    }
   }
 
   .contacts__title {
@@ -145,6 +137,18 @@
       background: url("../img/bg-zigzag-line.svg") no-repeat 0 0;
       background-size: 100% auto;
       transform: rotate(180deg);
+    }
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      width: 47px;
+      height: 81px;
+      top: -16px;
+      right: 8px;
+
+      background: url("../img/icon-flag.svg") no-repeat;
     }
   }
 
@@ -179,6 +183,10 @@
   }
 
   .contacts__link {
+    display: block;
+    height: 29px;
+    width: 200px;
+
     font-size: 17px;
     line-height: 1.76;
   }
@@ -203,18 +211,6 @@
 
     width: 1150px;
     height: 500px;
-
-    &::before {
-      content: "";
-
-      position: absolute;
-      width: 47px;
-      height: 81px;
-      top: 70px;
-      left: 114px;
-
-      background: url("../img/icon-flag.svg") no-repeat;
-    }
   }
 
   .contacts__field {
@@ -242,6 +238,18 @@
       background-size: 100% auto;
       transform: rotate(180deg);
     }
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      width: 47px;
+      height: 81px;
+      top: 68px;
+      left: -43px;
+
+      background: url("../img/icon-flag.svg") no-repeat;
+    }
   }
 
   .contacts__button {
@@ -268,5 +276,11 @@
     margin-top: 48px;
     margin-left: 211px;
     width: 300px;
+  }
+
+  .contacts__link {
+    display: block;
+    height: 30px;
+    width: 200px;
   }
 }
