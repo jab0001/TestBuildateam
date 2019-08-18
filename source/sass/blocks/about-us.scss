@@ -1,13 +1,15 @@
 .about-us {
   position: relative;
-  margin-top: 70px;
-  padding-left: 30px;
+  width: 290px;
+  margin: 0 auto;
+  margin-top: 68px;
+  padding-left: 25px;
   height: 100%;
 
   &::after {
     content: "";
     position: absolute;
-    top: -35px;
+    top: -36px;
     width: 325px;
     right: 5px;
     height: 6px;
@@ -31,7 +33,8 @@
 .about-us__list {
   margin: 0;
   padding: 0;
-  margin-top: 31px;
+  margin-top: 34px;
+  margin-left: 3px;
 
   list-style: none;
 }
@@ -52,57 +55,57 @@
     width: 175px;
 
     background: url("../img/icon-feature-flower.svg") no-repeat;
-    background-position-x: 8px;
+    background-position-x: 7px;
+    background-position-y: -1px;
   }
 
   &--scandinavian {
     width: 200px;
 
     background: url("../img/icon-feature-money.svg") no-repeat;
-    background-position-y: 2px;
   }
 
   &--likes {
     width: 181px;
 
     background: url("../img/icon-feature-heart.svg") no-repeat;
-    background-position-x: 8px;
-    background-position-y: 6px;
+    background-position-x: 6px;
+    background-position-y: 4px;
   }
 
   &--related {
     width: 211px;
 
     background: url("../img/icon-feature-ball.svg") no-repeat;
-    background-position-x: 4px;
-    background-position-y: 4px;
+    background-position-x: 2px;
+    background-position-y: 1px;
   }
 
   &--support {
     width: 251px;
 
     background: url("../img/icon-feature-rocket.svg") no-repeat;
-    background-position-x: -2px;
-    background-position-y: 5px;
+    background-position-x: -4px;
+    background-position-y: 2px;
   }
 
   &--supplied {
     width: 198px;
 
     background: url("../img/icon-feature-gift.svg") no-repeat;
-    background-position-x: 3px;
-    background-position-y: 3px;
+    background-position-x: 2px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .about-us {
-    margin-top: 117px;
+    margin-top: 118px;
     padding-left: 45px;
+    width: 723px;
 
     &::after {
       top: -65px;
-      width: 775px;
+      width: 768px;
       height: 15px;
 
       background: url("../img/bg-zigzag-line.svg");
@@ -126,66 +129,63 @@
     line-height: 1.1;
 
     &--ecology {
-      padding-left: 6px;
       padding-right: 110px;
 
       background: url("../img/icon-feature-flower.svg") no-repeat;
-      background-position-x: 14px;
+      background-position-x: 11px;
       background-position-y: 3px;
 
       order: 1;
     }
 
     &--scandinavian {
-      padding-left: 6px;
-      padding-right: 60px;
+      padding-right: 70px;
 
       background: url("../img/icon-feature-money.svg") no-repeat;
-      background-position-x: 6px;
+      background-position-x: 4px;
       background-position-y: 4px;
 
       order: 3;
     }
 
     &--likes {
-      padding-left: 6px;
       padding-right: 110px;
 
       background: url("../img/icon-feature-heart.svg") no-repeat;
-      background-position-x: 14px;
+      background-position-x: 10px;
       background-position-y: 9px;
 
       order: 5;
     }
 
     &--related {
-      padding-left: 11px;
+      padding-left: 6px;
       padding-right: 60px;
 
       background: url("../img/icon-feature-ball.svg") no-repeat;
-      background-position-x: 12px;
+      background-position-x: 10px;
       background-position-y: 6px;
 
       order: 2;
     }
 
     &--support {
-      padding-left: 11px;
+      padding-left: 6px;
       padding-right: 25px;
 
       background: url("../img/icon-feature-rocket.svg") no-repeat;
-      background-position-x: 2px;
+      background-position-x: 1px;
       background-position-y: 7px;
 
       order: 4;
     }
 
     &--supplied {
-      padding-left: 11px;
+      padding-left: 6px;
       padding-right: 60px;
 
       background: url("../img/icon-feature-gift.svg") no-repeat;
-      background-position-x: 12px;
+      background-position-x: 10px;
       background-position-y: 5px;
 
       order: 6;
@@ -205,6 +205,7 @@
 @media (min-width: $desktop-width) {
   .about-us {
     margin-top: 155px;
+    width: 1105px;
 
     &::after {
       top: -81px;
@@ -236,49 +237,53 @@
 
     &--ecology {
       padding-right: 120px;
+      padding-left: 8px;
 
       background: url("../img/icon-feature-flower.svg") no-repeat;
-      background-position-x: 15px;
-      background-position-y: 4px;
+      background-position-x: 16px;
+      background-position-y: 3px;
     }
 
     &--scandinavian {
       padding-right: 90px;
+      padding-left: 8px;
 
       background: url("../img/icon-feature-money.svg") no-repeat;
-      background-position-x: 6px;
-      background-position-y: 4px;
+      background-position-x: 9px;
+      background-position-y: 3px;
     }
 
     &--likes {
+      padding-left: 8px;
+
       background: url("../img/icon-feature-heart.svg") no-repeat;
-      background-position-x: 14px;
-      background-position-y: 9px;
+      background-position-x: 15px;
+      background-position-y: 8px;
     }
 
     &--related {
       padding-right: 60px;
-      padding-left: 4px;
+      padding-left: 8px;
 
       background: url("../img/icon-feature-ball.svg") no-repeat;
-      background-position-x: 9px;
-      background-position-y: 7px;
+      background-position-x: 10px;
+      background-position-y: 6px;
     }
 
     &--support {
-      padding-left: 4px;
+      padding-left: 8px;
 
       background: url("../img/icon-feature-rocket.svg") no-repeat;
-      background-position-x: -2px;
-      background-position-y: 8px;
+      background-position-x: 1px;
+      background-position-y: 7px;
     }
 
     &--supplied {
       padding-right: 60px;
-      padding-left: 4px;
+      padding-left: 8px;
 
       background: url("../img/icon-feature-gift.svg") no-repeat;
-      background-position-x: 8px;
+      background-position-x: 10px;
       background-position-y: 5px;
     }
   }

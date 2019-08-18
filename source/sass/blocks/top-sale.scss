@@ -1,13 +1,13 @@
 .top-sale {
   width: 320px;
   margin: 0 auto;
+  margin-top: 28px;
 }
 
 .top-sale__item {
   margin: 0;
   padding: 0;
-  margin-top: 28px;
-  margin-left: 30px;
+  margin-left: 31px;
 
   font-size: 25px;
   font-weight: bold;
@@ -19,7 +19,7 @@
 .top-sale__status {
   margin: 0;
   padding: 0;
-  margin-top: 5px;
+  margin-top: 7px;
   margin-left: 30px;
 
   font-size: 17px;
@@ -34,7 +34,7 @@
   width: 255px;
   margin: 0;
   padding: 0;
-  margin-top: 23px;
+  margin-top: 22px;
   margin-left: 30px;
 
   font-size: 15px;
@@ -49,7 +49,7 @@
 .top-sale__value {
   margin: 0;
   padding: 0;
-  padding-bottom: 18px;
+  padding-bottom: 19px;
   padding-right: 28px;
 
   font-size: 15px;
@@ -64,7 +64,7 @@
   padding: 0;
   margin-left: 97px;
   margin-top: 15px;
-  margin-bottom: 25px;
+  margin-bottom: 28px;
 
   font-size: 17px;
   font-weight: bold;
@@ -102,8 +102,8 @@
   margin: 0;
   padding: 0;
   margin-top: 25px;
-  margin-bottom: 18px;
-  margin-left: 26px;
+  margin-bottom: 19px;
+  margin-left: 28px;
 }
 
 .top-sale__field {
@@ -130,7 +130,7 @@
     display: flex;
     flex-wrap: wrap;
     width: 768px;
-    margin-top: 44px;
+    margin-top: 45px;
 
     &::before {
       content: "";
@@ -147,7 +147,7 @@
   .top-sale__item {
     margin: 0;
     padding: 0;
-    margin-left: 49px;
+    margin-left: 46px;
 
     font-size: 43px;
     line-height: 1.16;
@@ -156,7 +156,7 @@
   .top-sale__status {
     margin: 0;
     padding-top: 12px;
-    margin-left: 145px;
+    margin-left: 146px;
     width: 70px;
 
     line-height: 1;
@@ -165,7 +165,7 @@
 
   .top-sale__description {
     margin: 0;
-    margin-top: 50px;
+    margin-top: 52px;
     margin-left: 3px;
     width: 282px;
 
@@ -176,14 +176,14 @@
 
   .top-sale__table {
     margin: 0;
-    margin-top: 44px;
+    margin-top: 46px;
   }
 
   .top-sale__img {
     position: absolute;
 
-    top: 108px;
-    right: 53px;
+    top: 107px;
+    right: 50px;
     width: 333px;
     height: 404px;
   }
@@ -191,8 +191,8 @@
   .top-sale__price {
     margin: 0;
     margin-right: 400px;
-    margin-top: 46px;
-    margin-left: 123px;
+    margin-top: 45px;
+    margin-left: 121px;
 
     font-size: 20px;
     line-height: 1.2;
@@ -200,16 +200,16 @@
 
   .top-sale__button {
     margin: 0;
-    margin-top: 34px;
-    margin-left: 49px;
+    margin-top: 35px;
+    margin-left: 47px;
     width: 289px;
   }
 
   .top-sale__wrapper {
     display: flex;
     flex-direction: column;
-    margin-left: 49px;
-    width: 300px;
+    margin-left: 47px;
+    width: 267px;
   }
 
   .top-sale__field {
@@ -223,9 +223,10 @@
 @media (min-width: $desktop-width) {
   .top-sale {
     width: 1150px;
+    margin-top: 42px;
 
     &::before {
-      top: -59px;
+      top: -63px;
       width: 1150px;
       height: 34px;
 
@@ -269,7 +270,7 @@
   .top-sale__description {
     margin: 0;
     padding: 0;
-    margin-top: 49px;
+    margin-top: 51px;
     margin-left: 4px;
     margin-bottom: 58px;
   }
