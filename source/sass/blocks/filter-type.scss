@@ -67,11 +67,9 @@
     border-radius: 50%;
     border: solid 2px $color-dark;
 
-    cursor:pointer;
+    cursor: pointer;
   }
-}
 
-.filter-type__label {
   &:hover::after {
     border: solid 2px $btn-color;
   }

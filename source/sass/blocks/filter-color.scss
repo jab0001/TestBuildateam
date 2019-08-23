@@ -140,11 +140,11 @@
   }
 
   .filter-color__label::after {
-      width: 50px;
-      height: 48px;
+    width: 50px;
+    height: 48px;
 
-      top: -11px;
-      left: -81px;
+    top: -11px;
+    left: -81px;
   }
 
   .filter-color__input:checked + .filter-color__label {
@@ -183,6 +183,5 @@
 
   .filter-color__item {
     width: 157px;
-
   }
 }
