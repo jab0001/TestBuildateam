@@ -95,6 +95,7 @@
 
 @media (min-width: $tablet-width) {
   .filter-color {
+    position: relative;
     margin: 0;
     padding: 0;
     margin-top: 11px;
@@ -103,24 +104,20 @@
     background-color: $bg-color-footer;
   }
 
-  .filter-color__wrapper {
-    display: flex;
-
-    width: 665px;
-    margin: 0 auto;
-  }
-
   .filter-color__list {
     display: flex;
     flex-wrap: wrap;
 
     margin: 0;
-    margin-top: 13px;
-    margin-left: 97px;
+    margin-top: 14px;
+    margin-left: 194px;
   }
 
   .filter-color__name {
-    margin-top: 68px;
+    position: absolute;
+
+    top: 69px;
+    left: 52px;
   }
 
   .filter-color__name::after {
@@ -163,16 +160,15 @@
 @media (min-width: $desktop-width) {
   .filter-color {
     min-height: 228px;
+    width: 994px;
+
+    padding-left: 156px;
+    margin-top: 10px;
   }
 
   .filter-color__name {
-    margin-top: 67px;
-  }
-
-  .filter-color__wrapper {
-    width: 1039px;
-
-    padding-left: 111px;
+    top: 68px;
+    left: 110px;
   }
 
   .filter-color__list {

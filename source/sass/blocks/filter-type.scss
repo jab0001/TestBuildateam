@@ -96,16 +96,22 @@
 }
 
 @media (min-width: $tablet-width) {
-  .filter-type__wrapper {
-    display: flex;
-
+  .filter-type {
+    position: relative;
     width: 665px;
     margin: 0 auto;
   }
 
-  .filter-type__name::after {
-    display: none;
-  }
+  .filter-type__name {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    &::after {
+      display: none;
+    }
+}
 
   .filter-type__toggles {
     margin: 0;
@@ -116,7 +122,7 @@
     margin: 0;
     padding: 0;
     width: 255px;
-    margin-left: 209px;
+    margin-left: 246px;
     margin-bottom: 58px;
 
     font-size: 19px;
@@ -154,11 +160,11 @@
 }
 
 @media (min-width: $desktop-width) {
-  .filter-type__wrapper {
+  .filter-type {
     margin-left: 113px;
   }
 
   .filter-type__option {
-    margin-left: 156px;
+    margin-left: 193px;
   }
 }

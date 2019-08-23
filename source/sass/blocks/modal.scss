@@ -1,9 +1,11 @@
 .modal {
   display: none;
   position: fixed;
-  width: 100%;
+  width: 320px;
 
   top: 25%;
+  left: 50%;
+  transform: translate(-50%, 0);
 
   z-index: 7;
 }
@@ -15,7 +17,6 @@
 .modal__wrapper {
   width: 320px;
   min-height: 334px;
-  margin: 0 auto;
 
   background: #ffffff;
   border: solid 1px #c6c6c6;
@@ -99,18 +100,13 @@
   background-color: $btn-color;
 
   cursor: pointer;
-
-  &:hover {
-    height: 60px;
-  }
-
-  &:focus {
-    height: 52px;
-    outline: none;
-  }
 }
 
 @media (min-width: $tablet-width) {
+  .modal {
+    width: 566px;
+  }
+
   .modal__wrapper {
     width: 566px;
   }
