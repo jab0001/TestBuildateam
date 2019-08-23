@@ -73,51 +73,62 @@
         свяжемся с вами, чтобы уточнить детали.</p>
       <form class="order__questions" method="post" action="https://echo.htmlacademy.ru">
         <fieldset class="filter-type">
-          <legend class="filter-type__name">
-            тип
-          </legend>
-          <ul class="filter-type__toggles">
-            <li class="filter-type__option">
-              <input id="filter-have" class="filter-type__input" type="radio" name="product-type" value="have" checked>
-              <label class="filter-type__label" for="filter-have">Аксессуар для
-                интерьера</label>
-            </li>
-            <li class="filter-type__option">
-              <input id="filter-donthave" class="filter-type__input" type="radio" name="product-type" value="dont-have">
-              <label class="filter-type__label" for="filter-donthave">Детская игрушка</label>
-            </li>
-          </ul>
+          <div class="filter-type__wrapper">
+            <legend class="filter-type__name">
+              тип
+            </legend>
+            <ul class="filter-type__toggles">
+              <li class="filter-type__option">
+                <input id="filter-have" class="vissually-hidden filter-type__input" type="radio" name="product-type"
+                  value="have" checked>
+                <label class="filter-type__label" for="filter-have">Аксессуар для
+                  интерьера</label>
+              </li>
+              <li class="filter-type__option">
+                <input id="filter-donthave" class="vissually-hidden filter-type__input" type="radio" name="product-type"
+                  value="dont-have">
+                <label class="filter-type__label" for="filter-donthave">Детская игрушка</label>
+              </li>
+            </ul>
+          </div>
         </fieldset>
         <fieldset class="filter-color">
-          <legend class="filter-color__name">
-            Цвет
-          </legend>
-          <ul class="filter-color__list">
-            <li class="filter-color__item">
-              <input id="white" class="filter-color__input" type="checkbox" name="color" value="white" checked>
-              <label class="filter-color__label" for="white">Белый</label>
-            </li>
-            <li class="filter-color__item">
-              <input id="grey" class="filter-color__input" type="checkbox" name="color" value="grey" checked>
-              <label class="filter-color__label" for="grey">Серый</label>
-            </li>
-            <li class="filter-color__item">
-              <input id="tiffuny" class="filter-color__input" type="checkbox" name="color" value="tiffuny">
-              <label class="filter-color__label" for="tiffuny">«Тиффани»</label>
-            </li>
-            <li class="filter-color__item">
-              <input id="black" class="filter-color__input" type="checkbox" name="color" value="black">
-              <label class="filter-color__label" for="black">Черный</label>
-            </li>
-            <li class="filter-color__item">
-              <input id="pink" class="filter-color__input" type="checkbox" name="color" value="pink">
-              <label class="filter-color__label" for="pink">Розовый</label>
-            </li>
-            <li class="filter-color__item">
-              <input id="orange" class="filter-color__input" type="checkbox" name="color" value="orange">
-              <label class="filter-color__label" for="orange">Оранжевый</label>
-            </li>
-          </ul>
+          <div class="filter-color__wrapper">
+            <legend class="filter-color__name">
+              Цвет
+            </legend>
+            <ul class="filter-color__list">
+              <li class="filter-color__item">
+                <input id="white" class="vissually-hidden filter-color__input" type="checkbox" name="color"
+                  value="white" checked>
+                <label class="filter-color__label" for="white">Белый</label>
+              </li>
+              <li class="filter-color__item">
+                <input id="grey" class="vissually-hidden filter-color__input" type="checkbox" name="color" value="grey"
+                  checked>
+                <label class="filter-color__label" for="grey">Серый</label>
+              </li>
+              <li class="filter-color__item">
+                <input id="tiffuny" class="vissually-hidden filter-color__input" type="checkbox" name="color"
+                  value="tiffuny">
+                <label class="filter-color__label" for="tiffuny">«Тиффани»</label>
+              </li>
+              <li class="filter-color__item">
+                <input id="black" class="vissually-hidden filter-color__input" type="checkbox" name="color"
+                  value="black">
+                <label class="filter-color__label" for="black">Черный</label>
+              </li>
+              <li class="filter-color__item">
+                <input id="pink" class="vissually-hidden filter-color__input" type="checkbox" name="color" value="pink">
+                <label class="filter-color__label" for="pink">Розовый</label>
+              </li>
+              <li class="filter-color__item">
+                <input id="orange" class="vissually-hidden filter-color__input" type="checkbox" name="color"
+                  value="orange">
+                <label class="filter-color__label" for="orange">Оранжевый</label>
+              </li>
+            </ul>
+          </div>
         </fieldset>
         <fieldset class="user-information">
           <legend class="user-information__name">
@@ -146,20 +157,24 @@
                 placeholder="Отчество, если желаете">
             </li>
             <li class="user-information__item">
-              <label class="user-information__field user-information__field-color user-information__field-phone"
-                for="user-phone">
+              <label class="user-information__field user-information__field-phone" for="user-phone">
                 тел
               </label>
               <input id="user-phone" class="user-information__value user-information__value-phone" type="tel"
                 name="user-phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+              <svg class="user-information__img-phone" width="25" height="24">
+                <use xlink:href="#icon-phone"></use>
+              </svg>
             </li>
             <li class="user-information__item">
-              <label for="user-email"
-                class="user-information__field user-information__field-color user-information__field-email">
+              <label for="user-email" class="user-information__field user-information__field-email">
                 E-mail
               </label>
               <input id="user-email" class="user-information__value user-information__value-email" type="email"
                 name="user-email" placeholder="Ваш Email*">
+              <svg class="user-information__img-email" width="32" height="32">
+                <use xlink:href="#mail"></use>
+              </svg>
             </li>
           </ul>
         </fieldset>
@@ -167,20 +182,24 @@
           <label for="user-text" class="order__field order__field-color">
             Доп
           </label>
-          <textarea id="user-text" class="order__value" name="user-text" placeholder="Опишите все ваши
-              пожелания к заказу"></textarea>
+          <textarea id="user-text" class="order__value" name="user-text"
+            placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </p>
-        <small class="order__legend">
-          <sup>*</sup>Поля обязательны для заполнения
-        </small>
-        <button class="button order__button" type="submit">Отправить заказ</button>
+        <div class="order__wrapper">
+          <small class="order__legend">
+            <sup>*</sup>Поля обязательны для заполнения
+          </small>
+          <button class="button order__button" type="submit">Отправить заказ</button>
+        </div>
       </form>
     </section>
   </main>
-  <footer class="page-footer">
+  <footer class="page-footer page-footer--form">
     <div class="page-footer__container">
       <a class="page-footer__logo" href="index.html">
-        <img class="page-footer__logo-image" src="img/logo-mobile.svg" width="102" height="34" alt="Mishka">
+        <svg width="102" height="34">
+          <use xlink:href="#icon-logofooter"></use>
+        </svg>
       </a>
       <div class="page-footer__social social">
         <ul class="social__list">
@@ -229,6 +248,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/shit.min.js"></script>
 </body>
 
 </html>

@@ -166,10 +166,12 @@
       <a class="button manufacturing__button" href="#">Сделать заказ</a>
     </section>
   </main>
-  <footer class="page-footer">
+  <footer class="page-footer page-footer--catalog">
     <div class="page-footer__container">
       <a class="page-footer__logo" href="index.html">
-        <img class="page-footer__logo-image" src="img/logo-mobile.svg" width="102" height="34" alt="Mishka">
+        <svg width="102" height="34">
+          <use xlink:href="#icon-logofooter"></use>
+        </svg>
       </a>
       <div class="page-footer__social social">
         <ul class="social__list">
@@ -218,6 +220,23 @@
       </div>
     </div>
   </footer>
+  <div class="fog"></div>
+  <div class="modal">
+    <div class="modal__wrapper">
+      <h2 class="modal__title">Добавить в корзину</h2>
+      <p class="modal__text">Выберите размер:</p>
+      <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
+        <input type="checkbox" name="small" id="small" value="small-size" checked class="vissually-hidden modal__input">
+        <label for="small" class="modal__label">s</label>
+        <input type="checkbox" name="medium" id="medium" value="medium-size" class="vissually-hidden modal__input">
+        <label for="medium" class="modal__label">m</label>
+        <input type="checkbox" name="large" id="large" value="large-size" class="vissually-hidden modal__input">
+        <label for="large" class="modal__label">l</label>
+        <button class="button modal__button" type="submit">Добавить</button>
+      </form>
+    </div>
+  </div>
+  <script src="js/shit.min.js"></script>
 </body>
 
 </html>
