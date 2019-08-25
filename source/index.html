@@ -8,6 +8,7 @@
   <link rel="preload" href="fonts/opensans.woff2" as="font">
   <link rel="preload" href="fonts/opensansbold.woff2" as="font">
   <link href="css/style.min.css" rel="stylesheet">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=90c332ba-c01e-40d8-a808-5a306de28633&lang=ru_RU" type="text/javascript"></script>
 </head>
 
 <body>
@@ -209,17 +210,7 @@
           </td>
         </tr>
       </table>
-      <picture>
-        <source type="image/webp" media="(min-width: 1150px)"
-          srcset="img/map-desktop@1x.webp, img/map-desktop@2x.webp 2x">
-        <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet@1x.webp, img/map-tablet@2x.webp 2x">
-        <source type="image/webp" srcset="img/map-mobile@1x.webp, img/map-mobile@2x.webp 2x">
-
-        <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg, img/map-desktop@2x.jpg 2x">
-        <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg, img/map-tablet@2x.jpg 2x">
-        <img class="contacts__map" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" width="322"
-          height="457" alt="карта с местоположением офиса">
-      </picture>
+        <div id="map" class="contacts__map"></div>
       <a class="button contacts__button" href="#">Напишите нам</a>
     </section>
   </main>
@@ -295,6 +286,7 @@
   </div>
   <script src="js/menu.min.js"></script>
   <script src="js/popup.min.js"></script>
+  <script src="js/map.min.js"></script>
 </body>
 
 </html>

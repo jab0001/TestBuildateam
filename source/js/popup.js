@@ -26,3 +26,4 @@ popupFog.addEventListener("click", function (evt) {
       popupFog.classList.remove("fog--active");
   }
 })
+
