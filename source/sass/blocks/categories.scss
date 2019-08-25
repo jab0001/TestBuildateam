@@ -116,6 +116,7 @@
 
   .categories__list {
     display: flex;
+    flex-wrap: wrap;
     margin-top: 374px;
     margin-left: 50px;
   }
