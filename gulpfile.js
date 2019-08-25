@@ -15,7 +15,7 @@ var svgstore = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
-var minify = require('gulp-minify');
+var minify = require('gulp-uglify');
 var htmlmin = require('gulp-htmlmin');
 
 gulp.task("clean" , function() {
@@ -58,9 +58,11 @@ gulp.task("css", function () {
 });
 
 gulp.task('js', function() {
-  return gulp.src("source/js/shit.js")
+  return gulp.src("source/js/*.js")
     .pipe(minify())
-    .pipe(rename("shit.min.js"))
+    .pipe(rename(function(path) {
+      path.basename += '.min'
+    }))
     .pipe(gulp.dest('build/js'))
 });
 
