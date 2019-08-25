@@ -74,7 +74,8 @@
     box-shadow: inset 0 -2px 0 0 $btn-color;
   }
 
-  &:focus {
+  &:focus,
+  &:active {
     box-shadow: inset 0 -2px 0 0 $btn-color;
   }
 }
@@ -134,7 +135,9 @@
 }
 
 .user-information__value:focus ~ .user-information__img-phone,
-.user-information__value:focus ~ .user-information__img-email {
+.user-information__value:focus ~ .user-information__img-email,
+.user-information__value:active ~ .user-information__img-phone,
+.user-information__value:active ~ .user-information__img-email {
   fill: $btn-color;
 }
 

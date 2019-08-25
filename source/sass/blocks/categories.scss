@@ -33,7 +33,8 @@
     background-color: $hvr-btn-color;
   }
 
-  &:focus {
+  &:focus,
+  &:active {
     background-color: $hvr-btn-color;
   }
 }
@@ -50,7 +51,8 @@
     background-color: $hvr-scnd-btn-color;
   }
 
-  &:focus {
+  &:focus,
+  &:active {
     background-color: $hvr-scnd-btn-color;
   }
 }
@@ -74,11 +76,13 @@
     opacity: 0.7;
   }
 
-  &:focus svg {
+  &:focus svg,
+  &:active svg {
     opacity: 0.3;
   }
 
-  &:focus {
+  &:focus,
+  &:active {
     color: rgba(255, 255, 255, 0.3);
   }
 }

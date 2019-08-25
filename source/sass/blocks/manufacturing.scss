@@ -25,6 +25,7 @@
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
   }
 
+  &:active,
   &:active {
     box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
   }
@@ -79,7 +80,8 @@
     background-color: $color-bright;
   }
 
-  &:focus {
+  &:focus,
+  &:active {
     color: rgba(255, 255, 255, 0.3);
 
     background-color: $color-bright;

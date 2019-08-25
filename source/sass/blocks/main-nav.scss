@@ -27,7 +27,8 @@
     color: rgba(0, 0, 0, 0.6);
   }
 
-  &:focus {
+  &:focus,
+  &:active {
     color: rgba(0, 0, 0, 0.3);
   }
 
@@ -37,7 +38,9 @@
   }
 
   &--buy:focus,
-  &--search:focus {
+  &--search:focus,
+  &--buy:active,
+  &--search:active {
     fill: $btn-color;
     opacity: 0.3;
   }
@@ -248,7 +251,8 @@
       color: rgba(0, 0, 0, 0.6);
     }
 
-    &:focus {
+    &:focus,
+    &:active {
       color: rgba(0, 0, 0, 0.3);
     }
   }
@@ -411,7 +415,8 @@
       color: rgba(0, 0, 0, 0.6);
     }
 
-    &:focus {
+    &:focus,
+    &:active {
       color: rgba(0, 0, 0, 0.3);
     }
   }

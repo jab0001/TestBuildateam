@@ -25,7 +25,8 @@
     fill: $hvr-scnd-btn-color;
   }
 
-  &:focus {
+  &:focus,
+  &:active {
     fill: $hvr-scnd-btn-color;
     opacity: 0.3;
   }
