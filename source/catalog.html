@@ -149,7 +149,7 @@
     </section>
     <section class="manufacturing">
       <h2 class="manufacturing__title">Процесс производства</h2>
-      <picture>
+      <picture class="manufacturing__img">
         <source type="image/webp" media="(min-width: 1150px)"
           srcset="img/video-desktop@1x.webp, img/video-desktop@2x.webp 2x">
         <source type="image/webp" media="(min-width: 768px)"
@@ -226,11 +226,11 @@
       <h2 class="modal__title">Добавить в корзину</h2>
       <p class="modal__text">Выберите размер:</p>
       <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
-        <input type="checkbox" name="small" id="small" value="small-size" checked class="vissually-hidden modal__input">
+        <input type="radio" name="size" id="small" value="small-size" checked class="vissually-hidden modal__input">
         <label for="small" class="modal__label">s</label>
-        <input type="checkbox" name="medium" id="medium" value="medium-size" class="vissually-hidden modal__input">
+        <input type="radio" name="size" id="medium" value="medium-size" class="vissually-hidden modal__input">
         <label for="medium" class="modal__label">m</label>
-        <input type="checkbox" name="large" id="large" value="large-size" class="vissually-hidden modal__input">
+        <input type="radio" name="size" id="large" value="large-size" class="vissually-hidden modal__input">
         <label for="large" class="modal__label">l</label>
         <button class="button modal__button" type="submit">Добавить</button>
       </form>

@@ -8,7 +8,8 @@
   <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin>
   <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin>
   <link href="css/style.min.css" rel="stylesheet">
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=90c332ba-c01e-40d8-a808-5a306de28633&lang=ru_RU" type="text/javascript"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=90c332ba-c01e-40d8-a808-5a306de28633&lang=ru_RU"
+    type="text/javascript"></script>
 </head>
 
 <body>
@@ -210,7 +211,7 @@
           </td>
         </tr>
       </table>
-        <div id="map" class="contacts__map"></div>
+      <div id="map" class="contacts__map"></div>
       <a class="button contacts__button" href="#">Напишите нам</a>
     </section>
   </main>
@@ -274,11 +275,11 @@
       <h2 class="modal__title">Добавить в корзину</h2>
       <p class="modal__text">Выберите размер:</p>
       <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
-        <input type="checkbox" name="small" id="small" value="small-size" checked class="vissually-hidden modal__input">
+        <input type="radio" name="size" id="small" value="small-size" checked class="vissually-hidden modal__input">
         <label for="small" class="modal__label">s</label>
-        <input type="checkbox" name="medium" id="medium" value="medium-size" class="vissually-hidden modal__input">
+        <input type="radio" name="size" id="medium" value="medium-size" class="vissually-hidden modal__input">
         <label for="medium" class="modal__label">m</label>
-        <input type="checkbox" name="large" id="large" value="large-size" class="vissually-hidden modal__input">
+        <input type="radio" name="size" id="large" value="large-size" class="vissually-hidden modal__input">
         <label for="large" class="modal__label">l</label>
         <button class="button modal__button" type="submit">Добавить</button>
       </form>

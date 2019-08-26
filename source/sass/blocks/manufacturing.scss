@@ -25,9 +25,36 @@
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
   }
 
-  &:active,
+  &:focus,
   &:active {
     box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
+}
+
+.manufacturing__img {
+  position: relative;
+  &::after {
+    content: "";
+
+    position: absolute;
+    width: 101px;
+    height: 77px;
+
+    top: -98px;
+    left: 80px;
+
+    background: url("../img/icon-play.svg") no-repeat 0 0;
+
+    cursor: pointer;
+  }
+
+  &:hover::after {
+    transform: scale(1.2);
+  }
+
+  &:active::after {
+    transform: scale(0.8);
+    opacity: 0.3;
   }
 }
 
@@ -102,6 +129,15 @@
     }
   }
 
+  .manufacturing__img {
+    &::after {
+      top: 189px;
+      left: 282px;
+
+      background: url("../img/icon-play.svg") no-repeat 0 0;
+    }
+  }
+
   .manufacturing picture {
     order: -1;
   }
@@ -154,6 +190,15 @@
       left: 762px;
 
       background: url("../img/icon-video.svg") no-repeat 0 0;
+    }
+  }
+
+  .manufacturing__img {
+    &::after {
+      top: 189px;
+      left: 291px;
+
+      background: url("../img/icon-play.svg") no-repeat 0 0;
     }
   }
 
