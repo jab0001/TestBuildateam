@@ -78,9 +78,7 @@
   }
 }
 
-#small:checked ~ .modal__label[for="small"],
-#medium:checked ~ .modal__label[for="medium"],
-#large:checked ~ .modal__label[for="large"] {
+.modal__input:checked + .modal__label {
   border: solid 2px $btn-color;
 }
 
