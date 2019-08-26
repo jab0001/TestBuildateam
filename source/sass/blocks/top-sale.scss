@@ -137,6 +137,7 @@
       content: "";
       position: absolute;
       top: -56px;
+      left: 0;
       width: 768px;
       height: 24px;
 
@@ -231,8 +232,8 @@
       width: 1150px;
       height: 34px;
 
-      background: url("../img/bg-zigzag-fill.svg") no-repeat 0 0;
-      background-size: 100%;
+      background: url("../img/bg-zigzag-fill.svg") no-repeat;
+      background-size: 111% auto;
     }
   }
 
