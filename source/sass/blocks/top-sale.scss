@@ -228,12 +228,13 @@
     margin-top: 43px;
 
     &::before {
-      top: -63px;
+      top: -61px;
       width: 1150px;
       height: 34px;
 
       background: url("../img/bg-zigzag-fill.svg") no-repeat;
-      background-size: 111% auto;
+      background-size: 100% auto;
+      transform: scale(1.086);
     }
   }
 
