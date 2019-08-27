@@ -90,6 +90,7 @@
           <p class="products__info">Рост 30 см, вес 200 г</p>
           <p class="products__price">1 200 руб.</p>
           <a href="#">
+            <span class="vissually-hidden">Добавить в корзину</span>
             <svg class="products__sell-img" width="20" height="19">
               <use xlink:href="#icon-cart"></use>
             </svg>
@@ -115,6 +116,7 @@
           <p class="products__info">Диаметр 15 см, высота 10 см</p>
           <p class="products__price">690 руб.</p>
           <a href="#">
+            <span class="vissually-hidden">Добавить в корзину</span>
             <svg class="products__sell-img" width="20" height="19">
               <use xlink:href="#icon-cart"></use>
             </svg>
@@ -140,6 +142,7 @@
           <p class="products__info">Диаметр 30 см, высота 30 см</p>
           <p class="products__price">1 500 руб.</p>
           <a href="#">
+            <span class="vissually-hidden">Добавить в корзину</span>
             <svg class="products__sell-img" width="20" height="19">
               <use xlink:href="#icon-cart"></use>
             </svg>
@@ -226,11 +229,11 @@
       <h2 class="modal__title">Добавить в корзину</h2>
       <p class="modal__text">Выберите размер:</p>
       <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
-        <input type="radio" name="size" id="small" value="small-size" checked class="vissually-hidden modal__input">
+        <input id="small" class="vissually-hidden modal__input" type="radio" name="size" value="small-size" checked>
         <label for="small" class="modal__label">s</label>
-        <input type="radio" name="size" id="medium" value="medium-size" class="vissually-hidden modal__input">
+        <input id="medium" class="vissually-hidden modal__input" type="radio" name="size" value="medium-size">
         <label for="medium" class="modal__label">m</label>
-        <input type="radio" name="size" id="large" value="large-size" class="vissually-hidden modal__input">
+        <input id="large" class="vissually-hidden modal__input" type="radio" name="size" value="large-size">
         <label for="large" class="modal__label">l</label>
         <button class="button modal__button" type="submit">Добавить</button>
       </form>

@@ -227,15 +227,12 @@
   .user-information__value {
     width: 100%;
     margin-left: 25px;
+    padding-left: 16px;
 
     font-size: 19px;
     font-weight: normal;
     line-height: 0.95;
     text-align: left;
-
-    &::placeholder {
-      padding-left: 16px;
-    }
   }
 
   .user-information__field-phone {

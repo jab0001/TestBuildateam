@@ -220,7 +220,7 @@
     color: $color-dark;
 
     &--delivery {
-      padding-left: 135px;
+      margin-left: 100px;
 
       font-weight: normal;
       color: $color-bright;
@@ -361,9 +361,11 @@
     text-align: left;
 
     &--delivery {
+      width: 235px;
       padding-top: 17px;
       padding-bottom: 20px;
       padding-right: 50px;
+      margin-left: auto;
 
       font-size: 15px;
       font-weight: normal;

@@ -7,7 +7,7 @@ popupButton.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.add("modal--active");
   popupFog.classList.add("fog--active");
-})
+});
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
@@ -17,7 +17,7 @@ window.addEventListener("keydown", function (evt) {
       popupFog.classList.remove("fog--active");
     }
   }
-})
+});
 
 popupFog.addEventListener("click", function (evt) {
   evt.preventDefault();
@@ -25,4 +25,4 @@ popupFog.addEventListener("click", function (evt) {
       popup.classList.remove("modal--active");
       popupFog.classList.remove("fog--active");
   }
-})
+});
