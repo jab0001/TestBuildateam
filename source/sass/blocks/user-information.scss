@@ -80,7 +80,7 @@
   }
 }
 
-.user-information__field-phone {
+.user-information__field--phone {
   position: relative;
   margin-top: 11px;
 
@@ -101,7 +101,7 @@
   }
 }
 
-.user-information__value-phone {
+.user-information__value--phone {
   margin-top: 5px;
 
   font-size: 19px;
@@ -141,7 +141,7 @@
   fill: $btn-color;
 }
 
-.user-information__field-email {
+.user-information__field--email {
   position: relative;
 
   margin-top: 11px;
@@ -163,7 +163,7 @@
   }
 }
 
-.user-information__value-email {
+.user-information__value--email {
   margin-top: 5px;
 
   font-size: 17px;
@@ -207,8 +207,8 @@
     padding-bottom: 10px;
   }
 
-  .user-information__field-email::after,
-  .user-information__field-phone::after,
+  .user-information__field--email::after,
+  .user-information__field--phone::after,
   .user-information__name::after {
     display: none;
   }
@@ -235,7 +235,7 @@
     text-align: left;
   }
 
-  .user-information__field-phone {
+  .user-information__field--phone {
     margin: 0;
     margin-top: 79px;
 
@@ -245,14 +245,14 @@
     text-align: left;
   }
 
-  .user-information__value-phone {
+  .user-information__value--phone {
     margin-top: 76px;
     margin-left: 133px;
 
     background: $bg-color-footer;
   }
 
-  .user-information__field-email {
+  .user-information__field--email {
     margin: 0;
     width: 80px;
     margin-top: 1px;
@@ -263,7 +263,7 @@
     text-align: left;
   }
 
-  .user-information__value-email {
+  .user-information__value--email {
     margin-top: 0;
     margin-left: 105px;
 
@@ -300,21 +300,21 @@
     width: 815px;
   }
 
-  .user-information__field-phone {
+  .user-information__field--phone {
     margin-left: 0;
     padding-top: 14px;
   }
 
-  .user-information__value-phone {
+  .user-information__value--phone {
     margin-left: 82px;
   }
 
-  .user-information__field-email {
+  .user-information__field--email {
     margin-left: 0;
     padding-top: 17px;
   }
 
-  .user-information__value-email {
+  .user-information__value--email {
     margin-left: 45px;
   }
 
