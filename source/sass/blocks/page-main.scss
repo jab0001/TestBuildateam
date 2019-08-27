@@ -2,6 +2,7 @@
   width: 250px;
   margin: 0 auto;
   padding-top: 72px;
+  position: relative;
 
   font-size: 27px;
   font-weight: bold;
@@ -12,9 +13,11 @@
 
 .page-main {
   margin: 0 auto;
-  width: 320px;
+  width: 100%;
 
-  background: url("../img/hero-mobile@1x.jpg") no-repeat -127px -16px;
+  background: url("../img/hero-mobile@1x.jpg") no-repeat;
+  background-position: center;
+  background-position-y: -18px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/hero-mobile@2x.jpg");
@@ -23,20 +26,9 @@
 }
 
 @media (min-width: $tablet-width) {
-  .page-main {
-    width: 768px;
-
-    background: url("../img/hero-tablet@1x.jpg") no-repeat -190px -41px;
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/hero-tablet@2x.jpg");
-      background-size: 1150px auto;
-    }
-  }
-
   .page-main__title {
     width: 500px;
-    padding-top: 112px;
+    padding-top: 114px;
 
     font-size: 43px;
     font-weight: bold;
@@ -44,25 +36,36 @@
     text-align: center;
     color: $color-dark;
   }
+
+  .page-main {
+    background: url("../img/hero-tablet@1x.jpg") no-repeat;
+    background-position: center;
+    background-position-y: -40px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/hero-tablet@2x.jpg");
+      background-size: 1150px auto;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
-  .page-main {
-    width: 1150px;
+  .page-main__title {
+    width: 615px;
+    padding-top: 94px;
 
-    background: url("../img/hero-desktop@1x.jpg") no-repeat 1px -63px;
+    font-size: 53px;
+    line-height: 1.08;
+  }
+
+  .page-main {
+    background: url("../img/hero-desktop@1x.jpg") no-repeat;
+    background-position: center;
+    background-position-y: -63px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/hero-desktop@2x.jpg");
       background-size: 1150px auto;
     }
-  }
-
-  .page-main__title {
-    width: 615px;
-    padding-top: 90px;
-
-    font-size: 53px;
-    line-height: 1.08;
   }
 }

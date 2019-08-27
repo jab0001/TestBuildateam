@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Catalog Mishka</title>
+  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin>
   <link href="css/style.min.css" rel="stylesheet">
 </head>
 
@@ -21,7 +23,7 @@
         <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Mishka">
       </picture>
     </a>
-    <nav class="main-nav  main-nav--closed">
+    <nav class="main-nav  main-nav--no-js">
       <button class="main-nav__toggle" type="button">
         <span class="vissually-hidden">
           Открыть меню
@@ -88,6 +90,7 @@
           <p class="products__info">Рост 30 см, вес 200 г</p>
           <p class="products__price">1 200 руб.</p>
           <a href="#">
+            <span class="vissually-hidden">Добавить в корзину</span>
             <svg class="products__sell-img" width="20" height="19">
               <use xlink:href="#icon-cart"></use>
             </svg>
@@ -113,6 +116,7 @@
           <p class="products__info">Диаметр 15 см, высота 10 см</p>
           <p class="products__price">690 руб.</p>
           <a href="#">
+            <span class="vissually-hidden">Добавить в корзину</span>
             <svg class="products__sell-img" width="20" height="19">
               <use xlink:href="#icon-cart"></use>
             </svg>
@@ -138,6 +142,7 @@
           <p class="products__info">Диаметр 30 см, высота 30 см</p>
           <p class="products__price">1 500 руб.</p>
           <a href="#">
+            <span class="vissually-hidden">Добавить в корзину</span>
             <svg class="products__sell-img" width="20" height="19">
               <use xlink:href="#icon-cart"></use>
             </svg>
@@ -147,7 +152,7 @@
     </section>
     <section class="manufacturing">
       <h2 class="manufacturing__title">Процесс производства</h2>
-      <picture>
+      <picture class="manufacturing__img">
         <source type="image/webp" media="(min-width: 1150px)"
           srcset="img/video-desktop@1x.webp, img/video-desktop@2x.webp 2x">
         <source type="image/webp" media="(min-width: 768px)"
@@ -164,10 +169,12 @@
       <a class="button manufacturing__button" href="#">Сделать заказ</a>
     </section>
   </main>
-  <footer class="page-footer">
+  <footer class="page-footer page-footer--catalog">
     <div class="page-footer__container">
       <a class="page-footer__logo" href="index.html">
-        <img class="page-footer__logo-image" src="img/logo-mobile.svg" width="102" height="34" alt="Mishka">
+        <svg width="102" height="34">
+          <use xlink:href="#icon-logofooter"></use>
+        </svg>
       </a>
       <div class="page-footer__social social">
         <ul class="social__list">
@@ -216,6 +223,25 @@
       </div>
     </div>
   </footer>
+  <div class="fog"></div>
+  <div class="modal">
+    <div class="modal__wrapper">
+      <h2 class="modal__title">Добавить в корзину</h2>
+      <p class="modal__text">Выберите размер:</p>
+      <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
+        <input id="small" class="vissually-hidden modal__input" type="radio" name="size" value="small-size" checked>
+        <label for="small" class="modal__label">s</label>
+        <input id="medium" class="vissually-hidden modal__input" type="radio" name="size" value="medium-size">
+        <label for="medium" class="modal__label">m</label>
+        <input id="large" class="vissually-hidden modal__input" type="radio" name="size" value="large-size">
+        <label for="large" class="modal__label">l</label>
+        <button class="button modal__button" type="submit">Добавить</button>
+      </form>
+    </div>
+  </div>
+  <script src="js/menu.min.js"></script>
+  <script src="js/popup.min.js"></script>
+  <script src="js/pickturefill.min.js"></script>
 </body>
 
 </html>

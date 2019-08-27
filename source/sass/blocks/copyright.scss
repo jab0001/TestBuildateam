@@ -1,7 +1,7 @@
 .copyright__text {
   margin: 0;
   padding: 0;
-  margin-top: 45px;
+  margin-top: 47px;
   margin-left: 33px;
 
   font-size: 19px;
@@ -23,7 +23,8 @@
     fill: $hvr-scnd-btn-color;
   }
 
-  &:focus {
+  &:focus,
+  &:active {
     fill: $hvr-scnd-btn-color;
 
     opacity: 0.3;
@@ -42,12 +43,12 @@
 
 @media (min-width: $tablet-width) {
   .copyright__text {
-    margin-top: 61px;
+    margin-top: 63px;
     margin-left: 46px;
   }
 
   .copyright__link {
-    padding-top: 56px;
+    padding-top: 58px;
   }
 }
 

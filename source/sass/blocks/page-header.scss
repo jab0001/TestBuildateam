@@ -3,7 +3,8 @@
     opacity: 0.6;
   }
 
-  &:focus {
+  &:focus,
+  &:active {
     opacity: 0.3;
   }
 }
@@ -11,6 +12,8 @@
 .page-header {
   width: 320px;
   margin: 0 auto;
+
+  border-bottom: 1px solid #ececec;
 }
 
 .page-header__logo-image {
@@ -26,6 +29,8 @@
   .page-header {
     position: relative;
     width: 768px;
+
+    border: none;
   }
 
   .page-header__logo {
@@ -50,6 +55,8 @@
   .page-header {
     position: relative;
     width: 1150px;
+
+    border: none;
   }
 
   .page-header__logo {

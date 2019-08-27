@@ -5,7 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Проект Mishka</title>
+  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin>
   <link href="css/style.min.css" rel="stylesheet">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=90c332ba-c01e-40d8-a808-5a306de28633&lang=ru_RU"></script>
 </head>
 
 <body>
@@ -21,7 +24,7 @@
         <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Mishka">
       </picture>
     </a>
-    <nav class="main-nav main-nav--opened">
+    <nav class="main-nav main-nav--no-js">
       <button class="main-nav__toggle" type="button">
         <span class="vissually-hidden">
           Открыть меню
@@ -165,7 +168,7 @@
       <ul class="reviews__list">
         <li class="reviews__item">
           <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества
-            лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои
+            лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и&#160;мои
             фотографии сразу стали более стильными, а также набирают больше лайков!</p>
           <cite class="reviews__author-name">Анастасия Красильникова</cite>
           <p class="reviews__author-email">@misssssiskras</p>
@@ -207,24 +210,16 @@
           </td>
         </tr>
       </table>
-      <picture>
-        <source type="image/webp" media="(min-width: 1150px)"
-          srcset="img/map-desktop@1x.webp, img/map-desktop@2x.webp 2x">
-        <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet@1x.webp, img/map-tablet@2x.webp 2x">
-        <source type="image/webp" srcset="img/map-mobile@1x.webp, img/map-mobile@2x.webp 2x">
-
-        <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg, img/map-desktop@2x.jpg 2x">
-        <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg, img/map-tablet@2x.jpg 2x">
-        <img class="contacts__map" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" width="322"
-          height="457" alt="карта с местоположением офиса">
-      </picture>
+      <div id="map" class="contacts__map"></div>
       <a class="button contacts__button" href="#">Напишите нам</a>
     </section>
   </main>
   <footer class="page-footer">
     <div class="page-footer__container">
       <a class="page-footer__logo" href="index.html">
-        <img class="page-footer__logo-image" src="img/logo-mobile.svg" width="102" height="34" alt="Mishka">
+        <svg width="102" height="34">
+          <use xlink:href="#icon-logofooter"></use>
+        </svg>
       </a>
       <div class="page-footer__social social">
         <ul class="social__list">
@@ -273,6 +268,26 @@
       </div>
     </div>
   </footer>
+  <div class="fog"></div>
+  <div class="modal">
+    <div class="modal__wrapper">
+      <h2 class="modal__title">Добавить в корзину</h2>
+      <p class="modal__text">Выберите размер:</p>
+      <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
+        <input id="small" class="vissually-hidden modal__input" type="radio" name="size" value="small-size" checked>
+        <label for="small" class="modal__label">s</label>
+        <input id="medium" class="vissually-hidden modal__input" type="radio" name="size" value="medium-size">
+        <label for="medium" class="modal__label">m</label>
+        <input id="large" class="vissually-hidden modal__input" type="radio" name="size" value="large-size">
+        <label for="large" class="modal__label">l</label>
+        <button class="button modal__button" type="submit">Добавить</button>
+      </form>
+    </div>
+  </div>
+  <script src="js/menu.min.js"></script>
+  <script src="js/popup.min.js"></script>
+  <script src="js/map.min.js"></script>
+  <script src="js/pickturefill.min.js"></script>
 </body>
 
 </html>

@@ -1,3 +1,9 @@
+.categories {
+  width: 320px;
+  margin: 0 auto;
+  margin-top: 124px;
+}
+
 .categories__item {
   list-style: none;
 
@@ -13,7 +19,6 @@
 .categories__list {
   margin: 0;
   padding: 0;
-  margin-top: 122px;
 }
 
 .categories__link--interior {
@@ -28,7 +33,8 @@
     background-color: $hvr-btn-color;
   }
 
-  &:focus {
+  &:focus,
+  &:active {
     background-color: $hvr-btn-color;
   }
 }
@@ -45,7 +51,8 @@
     background-color: $hvr-scnd-btn-color;
   }
 
-  &:focus {
+  &:focus,
+  &:active {
     background-color: $hvr-scnd-btn-color;
   }
 }
@@ -53,10 +60,10 @@
 .categories__link {
   display: block;
   position: relative;
-  height: 78px;
+  height: 75px;
   box-sizing: content-box;
   padding-left: 29px;
-  padding-top: 25px;
+  padding-top: 27px;
   padding-right: 185px;
 
   font-size: 19px;
@@ -69,11 +76,13 @@
     opacity: 0.7;
   }
 
-  &:focus svg {
+  &:focus svg,
+  &:active svg {
     opacity: 0.3;
   }
 
-  &:focus {
+  &:focus,
+  &:active {
     color: rgba(255, 255, 255, 0.3);
   }
 }
@@ -101,10 +110,15 @@
 }
 
 @media (min-width: $tablet-width) {
+  .categories {
+    width: 768px;
+  }
+
   .categories__list {
     display: flex;
+    flex-wrap: wrap;
     margin-top: 374px;
-    margin-left: 52px;
+    margin-left: 50px;
   }
 
   .categories__item {
@@ -150,8 +164,12 @@
 }
 
 @media (min-width: $desktop-width) {
+  .categories {
+    width: 1150px;
+  }
+
   .categories__list {
-    margin-top: 358px;
+    margin-top: 359px;
     margin-left: 50px;
   }
 
