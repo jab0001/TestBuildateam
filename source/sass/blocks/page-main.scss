@@ -15,7 +15,9 @@
   margin: 0 auto;
   width: 100%;
 
-  background: url("../img/hero-mobile@1x.jpg") no-repeat, linear-gradient(#ececec 0%, #ececec 1px, #f9f9f9 1px, #f9f9f9 373px, white 373px, white 100%);
+  border-top: 1px solid #ececec;
+
+  background: url("../img/hero-mobile@1x.jpg") no-repeat, linear-gradient(white 0%, #f9f9f9 0px, #f9f9f9 373px, white 373px, white 100%);
   background-position: center;
   background-position-y: -18px;
 
@@ -38,6 +40,8 @@
   }
 
   .page-main {
+    border-top: none;
+
     background: url("../img/hero-tablet@1x.jpg") no-repeat;
     background-position: center;
     background-position-y: -40px;
