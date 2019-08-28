@@ -11,14 +11,18 @@
   line-height: 1.11;
   text-align: center;
   color: $color-dark;
+}
 
-  background-color: #f1f1f1;
+.page-catalog {
+  background: linear-gradient(#f9f9f9 0%, #f9f9f9 177px, white 177px, white 100%);
 }
 
 @media (min-width: $tablet-width) {
   .page-catalog {
     width: 768px;
     margin: 0 auto;
+
+    background: none;
   }
 
   .page-catalog__title {
