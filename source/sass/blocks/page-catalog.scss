@@ -11,14 +11,19 @@
   line-height: 1.11;
   text-align: center;
   color: $color-dark;
+}
 
-  background-color: #f1f1f1;
+.page-catalog {
+  margin-top: 1px;
+  background: linear-gradient(#ececec 0%, #ececec 1px, #f1f1f1 1px, #f1f1f1 177px, white 177px, white 100%);
 }
 
 @media (min-width: $tablet-width) {
   .page-catalog {
     width: 768px;
     margin: 0 auto;
+
+    background: none;
   }
 
   .page-catalog__title {
