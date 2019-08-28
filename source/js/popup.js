@@ -1,4 +1,4 @@
-var popupButton = document.querySelectorAll(".js-modal-cart"),
+var popupButtons = document.querySelectorAll(".js-modal-cart"),
     popup = document.querySelector(".modal"),
     popupFog = document.querySelector(".fog");
 
@@ -22,8 +22,8 @@ popupFog.addEventListener("click", function (evt) {
 });
 
 
-for (var i = 0; i < popupButton.length; i++){
-  popupButton[i].addEventListener("click", function (event) {
+for (var i = 0; i < popupButtons.length; i++){
+  popupButtons[i].addEventListener("click", function (event) {
     event.preventDefault();
     popup.classList.add("modal--active");
     popupFog.classList.add("fog--active");
