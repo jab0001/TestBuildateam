@@ -1,13 +1,7 @@
-var popupButton = document.querySelector(".top-sale__button , .manufacturing__button"),
+var popupButton = document.querySelectorAll(".js-modal-cart"),
     popup = document.querySelector(".modal"),
     popupFog = document.querySelector(".fog");
 
-
-popupButton.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  popup.classList.add("modal--active");
-  popupFog.classList.add("fog--active");
-});
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
@@ -26,3 +20,12 @@ popupFog.addEventListener("click", function (evt) {
       popupFog.classList.remove("fog--active");
   }
 });
+
+
+for (var i = 0; i < popupButton.length; i++){
+  popupButton[i].addEventListener("click", function (event) {
+    event.preventDefault();
+    popup.classList.add("modal--active");
+    popupFog.classList.add("fog--active");
+  }
+)};
