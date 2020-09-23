@@ -4,290 +4,359 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Проект Mishka</title>
-  <link rel="preload" href="fonts/opensans.woff2" as="font">
-  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+  <title>ARTIGIANO</title>
   <link href="css/style.min.css" rel="stylesheet">
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=90c332ba-c01e-40d8-a808-5a306de28633&lang=ru_RU"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
 </head>
 
-<body class="gradient gradient--index">
-  <div style="display:none">
-    <include src="build/img/sprite.svg"></include>
-  </div>
-
+<body>
   <header class="page-header">
-    <a class="page-header__logo" href="index.html">
-      <picture>
-        <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
-        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Mishka">
-      </picture>
-    </a>
-    <nav class="main-nav main-nav--no-js">
-      <button class="main-nav__toggle" type="button">
-        <span class="vissually-hidden">
-          Открыть меню
-        </span>
-      </button>
-      <ul class="main-nav__list main-nav__list--index">
-        <li class="main-nav__item main-nav__item--catalog">
-          <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
-        </li>
-        <li class="main-nav__item main-nav__item--knitting">
-          <a class="main-nav__link" href="form.html">Вязание на заказ</a>
-        </li>
-        <li class="main-nav__item main-nav__item--search">
-          <a class="main-nav__link main-nav__link--search" href="#">
-            <svg class="main-nav__img" width="18" height="18">
-              <use xlink:href="#icon-search"></use>
-            </svg>
-            <span class="main-nav__text">Поиск по сайту</span>
-          </a>
-        </li>
-        <li class="main-nav__item main-nav__item--buy">
-          <a class="main-nav__link main-nav__link--buy" href="#">
-            <svg class="main-nav__img" width="21" height="18">
-              <use xlink:href="#icon-cart"></use>
-            </svg>
-            Корзина: пока пуста
-          </a>
-        </li>
-        <li class="main-nav__item main-nav__item--new">
-          <a class="main-nav__link main-nav__link--new" href="#">Новые поступления</a>
-        </li>
-        <li class="main-nav__item main-nav__item--sale">
-          <a class="main-nav__link main-nav__link--sale" href="#">Распродажа</a>
-        </li>
-        <li class="main-nav__item main-nav__item--delivery">
-          <a class="main-nav__link main-nav__link--delivery" href="#">Бесплатная доставка по России</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-
-  <main class="page-main">
-    <h1 class="page-main__title">Милые штуки ручной <br> работы для дома</h1>
-    <section class="categories">
-      <h2 class="vissually-hidden">
-        Навигация по каталогу
-      </h2>
-      <ul class="categories__list">
-        <li class="categories__item categories__item--interior">
-          <a class="categories__link categories__link--interior" href="#">
-            <svg class="categories__img categories__img--interior" width="40" height="62">
-              <use xlink:href="#icon-interior"></use>
-            </svg>
-            Предметы интерьера
-          </a>
-        </li>
-        <li class="categories__item categories__item--toys">
-          <a class="categories__link categories__link--toys" href="#">
-            <svg class="categories__img categories__img--toys" width="60" height="60">
-              <use xlink:href="#icon-toy"></use>
-            </svg>
-            Детские игрушки
-          </a>
-        </li>
-      </ul>
-    </section>
-    <section class="top-sale">
-      <h2 class="vissually-hidden">Лидеры продаж</h2>
-      <p class="top-sale__item">Вязаные корзинки</p>
-      <p class="top-sale__status">Товар недели</p>
-      <div class="top-sale__wrapper">
-        <p class="top-sale__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех
-          размерах.</p>
-        <table class="top-sale__table">
-          <tr>
-            <th class="top-sale__field">
-              Цвет:
-            </th>
-            <td class="top-sale__value">
-              «Тиффани»/серый
-            </td>
-          </tr>
-          <tr>
-            <th class="top-sale__field">
-              Диаметр:
-            </th>
-            <td class="top-sale__value">
-              25 см
-            </td>
-          </tr>
-          <tr>
-            <th class="top-sale__field">
-              Высота:
-            </th>
-            <td class="top-sale__value">
-              15 см
-            </td>
-          </tr>
-        </table>
-      </div>
-      <picture>
-        <source type="image/webp" media="(min-width: 1150px)"
-          srcset="img/triple-set-desktop@1x.webp, img/triple-set-desktop@2x.webp 2x">
-        <source type="image/webp" media="(min-width: 768px)"
-          srcset="img/triple-set-tablet@1x.webp, img/triple-set-tablet@2x.webp 2x">
-        <source type="image/webp" srcset="img/triple-set-mobile@1x.webp, img/triple-set-mobile@2x.webp 2x">
-
-        <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg, img/triple-set-desktop@2x.jpg 2x">
-        <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg, img/triple-set-tablet@2x.jpg 2x">
-        <img class="top-sale__img" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x"
-          width="260" height="315" alt="Вязаные корзины">
-      </picture>
-      <p class="top-sale__price">Цена: 990 руб.</p>
-      <a class="button top-sale__button js-modal-cart" href="#">Заказать</a>
-    </section>
-    <section class="about-us">
-      <h2 class="about-us__title">Коротко о нас:</h2>
-      <ul class="about-us__list">
-        <li class="about-us__item about-us__item--ecology">
-          Экологически чистые материалы
-        </li>
-        <li class="about-us__item about-us__item--scandinavian">
-          Скандинавский стиль по российской цене
-        </li>
-        <li class="about-us__item about-us__item--likes">
-          Увеличивает лайки на фотографиях
-        </li>
-        <li class="about-us__item about-us__item--related">
-          Связано вручную с любовью и умилением
-        </li>
-        <li class="about-us__item about-us__item--support">
-          Поддержка отечественного производителя
-        </li>
-        <li class="about-us__item about-us__item--supplied">
-          Поставляется в подарочной упаковке
-        </li>
-      </ul>
-    </section>
-    <section class="reviews">
-      <h2 class="reviews__title">Отзывы</h2>
-      <ul class="reviews__list">
-        <li class="reviews__item">
-          <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества
-            лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и&#160;мои
-            фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-          <cite class="reviews__author-name">Анастасия Красильникова</cite>
-          <p class="reviews__author-email">@misssssiskras</p>
-        </li>
-      </ul>
-      <ul class="reviews__toggles">
-        <li class="reviews__toggles-item">
-          <button class="reviews__toggle reviews__toggle--back" type="button"><span
-              class="vissually-hidden">Назад</span></button>
-        </li>
-        <li class="reviews__toggles-item">
-          <button class="reviews__toggle reviews__toggle--forward" type="button"><span
-              class="vissually-hidden">Вперед</span></button>
-        </li>
-      </ul>
-      <a class="button reviews__button" href="#">Написать</a>
-    </section>
-    <section class="contacts">
-      <h2 class="contacts__title">Контакты</h2>
-      <table class="contacts__table">
-        <tr>
-          <th class="contacts__field">
-            e-mail:
-          </th>
-          <td class="contacts__value">
-            <a class="contacts__link" href="mailto:info@mimimishkashop.ru">
-              info@mimimishkashop.ru
-            </a>
-          </td>
-        </tr>
-        <tr>
-          <th class="contacts__field">
-            адрес:
-          </th>
-          <td class="contacts__value">
-            г. Санкт-Петербург,<br>
-            ул. Большая Конюшенная,<br>
-            д. 19/8, офис 101
-          </td>
-        </tr>
-      </table>
-      <div id="map" class="contacts__map"></div>
-      <a class="button contacts__button" href="#">Напишите нам</a>
-    </section>
-  </main>
-  <footer class="page-footer">
-    <div class="page-footer__container">
-      <a class="page-footer__logo" href="index.html">
-        <svg width="102" height="34">
-          <use xlink:href="#icon-logofooter"></use>
-        </svg>
-      </a>
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--instagram" href="https://instagramm.com/htmlacademy">
-              <svg width="22" height="21">
-                <use xlink:href="#icon-insta"></use>
-              </svg>
-              <span class="vissually-hidden">
-                Мы в Инстаграмме
-              </span>
+    <nav class="main-nav">
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__nav-list only-desktop">
+          <li class="main-nav__nav-item">
+            <a class="main-nav__nav-link" href="#">
+              men
             </a>
           </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
-              <svg width="15" height="28">
-                <use xlink:href="#icon-fb"></use>
-              </svg>
-              <span class="vissually-hidden">
-                Мы в Фейсбуке
-              </span>
+          <li class="main-nav__nav-item">
+            <a class="main-nav__nav-link" href="#">
+              women
             </a>
           </li>
-          <li class="social__item">
-            <a class="social__link social__link--twitter" href="https://www.telegramm.com/htmlacademy">
-              <svg width="23" height="20">
-                <use xlink:href="#icon-twitter"></use>
-              </svg>
-              <span class="vissually-hidden">
-                Мы в Телеграмме
+          <li class="main-nav__nav-item">
+            <a class="main-nav__nav-link" href="#">
+              stores
+            </a>
+          </li>
+          <li class="main-nav__nav-item">
+            <a class="main-nav__nav-link" href="#">
+              about
+            </a>
+          </li>
+          <li class="main-nav__nav-item">
+            <a class="main-nav__nav-link" href="#">
+              service
+            </a>
+          </li>
+        </ul>
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item-menu">
+            <a class="main-nav__link" href="#">
+              <i class="fa fa-bars" aria-hidden="true"></i>
+              MENU
+            </a>
+          </li>
+          <li class="main-nav__item main-nav__item-home">
+            <a class="main-nav__link" href="#">
+              <i class="fa fa-home" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li class="main-nav__item main-nav__item-client">
+            <a class="main-nav__link" href="#">
+              <i class="fa fa-user" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li class="main-nav__item main-nav__item-search only-desktop">
+            <a class="main-nav__link" href="#">
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li class="main-nav__item main-nav__item-cart">
+            <a class="main-nav__link" href="#">
+              <span class="main-nav__text">
+                MY CART
+              </span>
+              <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+              <span class="main-nav__text">
+                0
               </span>
             </a>
           </li>
         </ul>
       </div>
+    </nav>
+    <a class="page-header__logo" href="#">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="img/logo-desktop.png">
+        <img class="page-header__logo-image" src="img/logo.jpg" width="341" height="142" alt="Artigiano">
+      </picture>
+    </a>
+  </header>
+
+  <main class="page-main">
+    <h1 class="vissually-hidden">Purchase information</h1>
+    <section class="product">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="img/t-short-desktop.png">
+        <img class="product__img" src="img/t-short.png" width="285" height="375" alt="T-Short">
+      </picture>
+      <div class="product__conteiner">
+        <ul class="product__list product-nav">
+          <li class="product-nav__item">
+            <a href="#" class="product-nav__btn">
+              Fabric
+            </a>
+          </li>
+          <li class="product-nav__item">
+            <a href="#" class="product-nav__btn">
+              Fit
+            </a>
+          </li>
+          <li class="product-nav__item">
+            <a href="#" class="product-nav__btn">
+              Collar
+            </a>
+          </li>
+          <li class="product-nav__item">
+            <a href="#" class="product-nav__btn">
+              Cuff
+            </a>
+          </li>
+          <li class="product-nav__item">
+            <a href="#" class="product-nav__btn">
+              Monogram
+            </a>
+          </li>
+          <li class="product-nav__item">
+            <a href="#" class="product-nav__btn">
+              Size
+            </a>
+          </li>
+          <li class="product-nav__item">
+            <a href="#" class="product-nav__btn" checked>
+              Summary
+            </a>
+          </li>
+        </ul>
+        <h2 class="product__title">
+          Step 7 - Summary
+        </h2>
+        <p class="product__info">At vero <span class="product__info--decoration">eos et accusam</span> et justo duo
+          dolores et ea rebum. Stet clita kasd gubergren, no
+          sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        <ul class="product__list">
+          <li class="product__item">
+            <strong>Fabric</strong>: Plain White
+          </li>
+          <li class="product__item">
+            <strong>Oxford Fit</strong>: Regular Fit
+          </li>
+          <li class="product__item">
+            <strong>Length</strong>: Regular
+          </li>
+          <li class="product__item">
+            <strong>Collar</strong>: James
+          </li>
+          <li class="product__item">
+            <strong>Cuff</strong>: MA Rund
+          </li>
+          <li class="product__item">
+            <strong>Monogram</strong>: Body
+          </li>
+          <li class="product__item">
+            <strong>Monogram Color</strong>: Navy
+          </li>
+          <li class="product__item">
+            <strong>Size</strong>: 39
+          </li>
+          <li class="product__item">
+            <strong>Length</strong>: Regular 60cm
+          </li>
+          <li class="product__item">
+            <strong>Amount</strong>: 3
+          </li>
+        </ul>
+        <p class="product__price">CHF129.00</p>
+        <div class="product__wrapper">
+          <button class="product__button product__button--prev">PREVIOUS STEP</button>
+          <button class="product__button product__button--next">ADD TO CART</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <a class="page-footer__link only-mobile">
+      <img class="page-footer__logo" src="img/logo.jpg" width="375" height="241" alt="Artigiano">
+    </a>
+    <div class="page-footer__container">
+      <ul class="page-footer__list">
+        <li class="page-footer__item page-footer__item--desktop">
+          <p class="page-footer__title">Connect</p>
+          <p class="page-footer__info">Join our mailing list for updates</p>
+          <form class="page-footer__form" action="#" method="post">
+            <input class="page-footer__email" type="email" placeholder="Enter Email Address">
+            <button class="page-footer__btn" type="submit">Join</button>
+          </form>
+        </li>
+        <li class="page-footer__item">
+          <p class="page-footer__title">Explore</p>
+          <ul class="page-footer__contact-list">
+            <li class="page-footer__contact-item">
+              <a class="page-footer__contact-link" href="#">Search</a>
+            </li>
+            <li class="page-footer__contact-item">
+              <a class="page-footer__contact-link" href="#">How to find us</a>
+            </li>
+            <li class="page-footer__contact-item">
+              email us
+              <a class="page-footer__contact-link" href="mailto:asoni@asoni.ch">asoni@asoni.ch</a>
+              or call us
+              <a class="page-footer__contact-link" href="tel:+41434332100">+41 43 433 21 00</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com">
+              <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+              <span class="vissually-hidden">
+                Facebook
+              </span>
+            </a>
+          </li>
+          <li class="social__item only-mobile">
+            <a class="social__link social__link--instagram" href="https://instagramm.com">
+              <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+              <span class="vissually-hidden">
+                Instagramm
+              </span>
+            </a>
+          </li>
+          <li class="social__item only-desktop">
+            <a class="social__link social__link--twitter" href="https://www.twitter.com">
+              <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+              <span class="vissually-hidden">
+                Twitter
+              </span>
+            </a>
+          </li>
+          <li class="social__item only-desktop">
+            <a class="social__link social__link--pinterest" href="https://www.twitter.com">
+              <i class="fa fa-pinterest fa-2x" aria-hidden="true"></i>
+              <span class="vissually-hidden">
+                Twitter
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__paysystem paysystem">
+        <ul class="paysystem__list">
+          <li class="paysystem__item">
+            <svg class="paysystem__icon" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 38 24" width="38"
+              height="24">
+              <g fill="none">
+                <path fill="#000"
+                  d="M35,0 L3,0 C1.3,0 0,1.3 0,3 L0,21 C0,22.7 1.4,24 3,24 L35,24 C36.7,24 38,22.7 38,21 L38,3 C38,1.3 36.6,0 35,0 Z"
+                  opacity=".07"></path>
+                <path fill="#006FCF"
+                  d="M35,1 C36.1,1 37,1.9 37,3 L37,21 C37,22.1 36.1,23 35,23 L3,23 C1.9,23 1,22.1 1,21 L1,3 C1,1.9 1.9,1 3,1 L35,1">
+                </path>
+                <path fill="#FFF"
+                  d="M8.971,10.268 L9.745,12.144 L8.203,12.144 L8.971,10.268 Z M25.046,10.346 L22.069,10.346 L22.069,11.173 L24.998,11.173 L24.998,12.412 L22.075,12.412 L22.075,13.334 L25.052,13.334 L25.052,14.073 L27.129,11.828 L25.052,9.488 L25.046,10.346 L25.046,10.346 Z M10.983,8.006 L14.978,8.006 L15.865,9.941 L16.687,8 L27.057,8 L28.135,9.19 L29.25,8 L34.013,8 L30.494,11.852 L33.977,15.68 L29.143,15.68 L28.065,14.49 L26.94,15.68 L10.03,15.68 L9.536,14.49 L8.406,14.49 L7.911,15.68 L4,15.68 L7.286,8 L10.716,8 L10.983,8.006 Z M19.646,9.084 L17.407,9.084 L15.907,12.62 L14.282,9.084 L12.06,9.084 L12.06,13.894 L10,9.084 L8.007,9.084 L5.625,14.596 L7.18,14.596 L7.674,13.406 L10.27,13.406 L10.764,14.596 L13.484,14.596 L13.484,10.661 L15.235,14.602 L16.425,14.602 L18.165,10.673 L18.165,14.603 L19.623,14.603 L19.647,9.083 L19.646,9.084 Z M28.986,11.852 L31.517,9.084 L29.695,9.084 L28.094,10.81 L26.546,9.084 L20.652,9.084 L20.652,14.602 L26.462,14.602 L28.076,12.864 L29.624,14.602 L31.499,14.602 L28.987,11.852 L28.986,11.852 Z">
+                </path>
+              </g>
+            </svg>
+          </li>
+          <li class="paysystem__item">
+            <svg class="paysystem__icon" version="1.1" xmlns="http://www.w3.org/2000/svg" role="img" x="0" y="0"
+              width="38" height="24" viewBox="0 0 165.521 105.965" xml:space="preserve">
+              <path fill="#000"
+                d="M150.698 0H14.823c-.566 0-1.133 0-1.698.003-.477.004-.953.009-1.43.022-1.039.028-2.087.09-3.113.274a10.51 10.51 0 0 0-2.958.975 9.932 9.932 0 0 0-4.35 4.35 10.463 10.463 0 0 0-.975 2.96C.113 9.611.052 10.658.024 11.696a70.22 70.22 0 0 0-.022 1.43C0 13.69 0 14.256 0 14.823v76.318c0 .567 0 1.132.002 1.699.003.476.009.953.022 1.43.028 1.036.09 2.084.275 3.11a10.46 10.46 0 0 0 .974 2.96 9.897 9.897 0 0 0 1.83 2.52 9.874 9.874 0 0 0 2.52 1.83c.947.483 1.917.79 2.96.977 1.025.183 2.073.245 3.112.273.477.011.953.017 1.43.02.565.004 1.132.004 1.698.004h135.875c.565 0 1.132 0 1.697-.004.476-.002.952-.009 1.431-.02 1.037-.028 2.085-.09 3.113-.273a10.478 10.478 0 0 0 2.958-.977 9.955 9.955 0 0 0 4.35-4.35c.483-.947.789-1.917.974-2.96.186-1.026.246-2.074.274-3.11.013-.477.02-.954.022-1.43.004-.567.004-1.132.004-1.699V14.824c0-.567 0-1.133-.004-1.699a63.067 63.067 0 0 0-.022-1.429c-.028-1.038-.088-2.085-.274-3.112a10.4 10.4 0 0 0-.974-2.96 9.94 9.94 0 0 0-4.35-4.35A10.52 10.52 0 0 0 156.939.3c-1.028-.185-2.076-.246-3.113-.274a71.417 71.417 0 0 0-1.431-.022C151.83 0 151.263 0 150.698 0z">
+              </path>
+              <path fill="#FFF"
+                d="M150.698 3.532l1.672.003c.452.003.905.008 1.36.02.793.022 1.719.065 2.583.22.75.135 1.38.34 1.984.648a6.392 6.392 0 0 1 2.804 2.807c.306.6.51 1.226.645 1.983.154.854.197 1.783.218 2.58.013.45.019.9.02 1.36.005.557.005 1.113.005 1.671v76.318c0 .558 0 1.114-.004 1.682-.002.45-.008.9-.02 1.35-.022.796-.065 1.725-.221 2.589a6.855 6.855 0 0 1-.645 1.975 6.397 6.397 0 0 1-2.808 2.807c-.6.306-1.228.511-1.971.645-.881.157-1.847.2-2.574.22-.457.01-.912.017-1.379.019-.555.004-1.113.004-1.669.004H14.801c-.55 0-1.1 0-1.66-.004a74.993 74.993 0 0 1-1.35-.018c-.744-.02-1.71-.064-2.584-.22a6.938 6.938 0 0 1-1.986-.65 6.337 6.337 0 0 1-1.622-1.18 6.355 6.355 0 0 1-1.178-1.623 6.935 6.935 0 0 1-.646-1.985c-.156-.863-.2-1.788-.22-2.578a66.088 66.088 0 0 1-.02-1.355l-.003-1.327V14.474l.002-1.325a66.7 66.7 0 0 1 .02-1.357c.022-.792.065-1.717.222-2.587a6.924 6.924 0 0 1 .646-1.981c.304-.598.7-1.144 1.18-1.623a6.386 6.386 0 0 1 1.624-1.18 6.96 6.96 0 0 1 1.98-.646c.865-.155 1.792-.198 2.586-.22.452-.012.905-.017 1.354-.02l1.677-.003h135.875">
+              </path>
+              <g>
+                <g>
+                  <path fill="#000"
+                    d="M43.508 35.77c1.404-1.755 2.356-4.112 2.105-6.52-2.054.102-4.56 1.355-6.012 3.112-1.303 1.504-2.456 3.959-2.156 6.266 2.306.2 4.61-1.152 6.063-2.858">
+                  </path>
+                  <path fill="#000"
+                    d="M45.587 39.079c-3.35-.2-6.196 1.9-7.795 1.9-1.6 0-4.049-1.8-6.698-1.751-3.447.05-6.645 2-8.395 5.1-3.598 6.2-.95 15.4 2.55 20.45 1.699 2.5 3.747 5.25 6.445 5.151 2.55-.1 3.549-1.65 6.647-1.65 3.097 0 3.997 1.65 6.696 1.6 2.798-.05 4.548-2.5 6.247-5 1.95-2.85 2.747-5.6 2.797-5.75-.05-.05-5.396-2.101-5.446-8.251-.05-5.15 4.198-7.6 4.398-7.751-2.399-3.548-6.147-3.948-7.447-4.048">
+                  </path>
+                </g>
+                <g>
+                  <path fill="#000"
+                    d="M78.973 32.11c7.278 0 12.347 5.017 12.347 12.321 0 7.33-5.173 12.373-12.529 12.373h-8.058V69.62h-5.822V32.11h14.062zm-8.24 19.807h6.68c5.07 0 7.954-2.729 7.954-7.46 0-4.73-2.885-7.434-7.928-7.434h-6.706v14.894z">
+                  </path>
+                  <path fill="#000"
+                    d="M92.764 61.847c0-4.809 3.665-7.564 10.423-7.98l7.252-.442v-2.08c0-3.04-2.001-4.704-5.562-4.704-2.938 0-5.07 1.507-5.51 3.82h-5.252c.157-4.86 4.731-8.395 10.918-8.395 6.654 0 10.995 3.483 10.995 8.89v18.663h-5.38v-4.497h-.13c-1.534 2.937-4.914 4.782-8.579 4.782-5.406 0-9.175-3.222-9.175-8.057zm17.675-2.417v-2.106l-6.472.416c-3.64.234-5.536 1.585-5.536 3.95 0 2.288 1.975 3.77 5.068 3.77 3.95 0 6.94-2.522 6.94-6.03z">
+                  </path>
+                  <path fill="#000"
+                    d="M120.975 79.652v-4.496c.364.051 1.247.103 1.715.103 2.573 0 4.029-1.09 4.913-3.899l.52-1.663-9.852-27.293h6.082l6.863 22.146h.13l6.862-22.146h5.927l-10.216 28.67c-2.34 6.577-5.017 8.735-10.683 8.735-.442 0-1.872-.052-2.261-.157z">
+                  </path>
+                </g>
+              </g>
+            </svg>
+          </li>
+          <li class="paysystem__item">
+            <svg class="paysystem__icon" viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" role="img" width="38"
+              height="24">
+              <path opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z">
+              </path>
+              <path fill="#fff" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"></path>
+              <circle fill="#EB001B" cx="15" cy="12" r="7"></circle>
+              <circle fill="#F79E1B" cx="23" cy="12" r="7"></circle>
+              <path fill="#FF5F00"
+                d="M22 12c0-2.4-1.2-4.5-3-5.7-1.8 1.3-3 3.4-3 5.7s1.2 4.5 3 5.7c1.8-1.2 3-3.3 3-5.7z"></path>
+            </svg>
+          </li>
+          <li class="paysystem__item">
+            <svg class="paysystem__icon" viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" width="38" height="24"
+              role="img">
+              <path opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z">
+              </path>
+              <path fill="#fff" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"></path>
+              <path fill="#003087"
+                d="M23.9 8.3c.2-1 0-1.7-.6-2.3-.6-.7-1.7-1-3.1-1h-4.1c-.3 0-.5.2-.6.5L14 15.6c0 .2.1.4.3.4H17l.4-3.4 1.8-2.2 4.7-2.1z">
+              </path>
+              <path fill="#3086C8"
+                d="M23.9 8.3l-.2.2c-.5 2.8-2.2 3.8-4.6 3.8H18c-.3 0-.5.2-.6.5l-.6 3.9-.2 1c0 .2.1.4.3.4H19c.3 0 .5-.2.5-.4v-.1l.4-2.4v-.1c0-.2.3-.4.5-.4h.3c2.1 0 3.7-.8 4.1-3.2.2-1 .1-1.8-.4-2.4-.1-.5-.3-.7-.5-.8z">
+              </path>
+              <path fill="#012169"
+                d="M23.3 8.1c-.1-.1-.2-.1-.3-.1-.1 0-.2 0-.3-.1-.3-.1-.7-.1-1.1-.1h-3c-.1 0-.2 0-.2.1-.2.1-.3.2-.3.4l-.7 4.4v.1c0-.3.3-.5.6-.5h1.3c2.5 0 4.1-1 4.6-3.8v-.2c-.1-.1-.3-.2-.5-.2h-.1z">
+              </path>
+            </svg>
+          </li>
+          <li class="paysystem__item">
+            <svg class="paysystem__icon" viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" role="img" width="38"
+              height="24">
+              <path d="M3 0h32a3 3 0 0 1 3 3v17.97a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3a3 3 0 0 1 3-3z" fill="#000"></path>
+              <path fill="#fff"
+                d="M11.822 14.477a.49.49 0 0 1-.22.383L7.31 17.337a.49.49 0 0 1-.442 0L2.576 14.86a.49.49 0 0 1-.22-.383V9.522a.49.49 0 0 1 .22-.382l4.292-2.478a.49.49 0 0 1 .442 0l4.291 2.478a.49.49 0 0 1 .221.382v4.955zM35.645 9.88H31.8v.913h1.378v3.923h1.088v-3.923h1.379v-.914.001zm-17.452-.001h-3.845v.913h1.379v3.923h1.088v-3.923h1.378v-.914.001zm11.12-.154c-1.209 0-1.882.771-1.882 1.887v3.103h1.075V11.59c0-.486.289-.86.819-.86s.815.444.815.86v3.127h1.075v-3.103c0-1.116-.696-1.887-1.904-1.887h.002v-.002zm-4.061.154h1.08v4.836h-1.08V9.879zm-3.644 1.915l.036.215 1.009 2.706h.44l1.375-4.837h-1.063l-.655 2.541-.039.272-.053-.272-.875-2.54h-.35l-.876 2.54-.053.272-.039-.272-.654-2.54h-1.064l1.375 4.836h.44l1.01-2.706.036-.215">
+              </path>
+              <path fill="#ff4800"
+                d="M9.324 12.012l-1.118 1.64-.573-.878.662-.988c.123-.177.385-.66.082-1.321a1.377 1.377 0 0 0-1.248-.796 1.377 1.377 0 0 0-1.247.796 1.27 1.27 0 0 0 .076 1.3l.674.995.495.716.75 1.145a.428.428 0 0 0 .334.19c.2 0 .322-.179.338-.201l1.754-2.597h-.979zm-2.202.042s-.293-.444-.483-.754a.556.556 0 0 1-.072-.275c0-.305.25-.556.555-.556s.556.251.556.556a.556.556 0 0 1-.072.275c-.187.31-.479.754-.479.754h-.005z">
+              </path>
+              <path fill="#007ce2"
+                d="M6.046 13.6l-1.099-1.544s-.293-.446-.483-.756a.553.553 0 0 1-.074-.276c0-.304.25-.553.553-.553h.004a.582.582 0 0 1 .161.022l.389-.71a1.376 1.376 0 0 0-1.793.681 1.27 1.27 0 0 0 .076 1.301l1.92 2.847c.016.025.139.204.343.204a.427.427 0 0 0 .337-.2l.58-.884-.498-.734-.417.602z">
+              </path>
+            </svg>
+          </li>
+          <li class="paysystem__item">
+            <svg class="paysystem__icon" viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" role="img" width="38"
+              height="24">
+              <path opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z">
+              </path>
+              <path fill="#fff" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"></path>
+              <path
+                d="M28.3 10.1H28c-.4 1-.7 1.5-1 3h1.9c-.3-1.5-.3-2.2-.6-3zm2.9 5.9h-1.7c-.1 0-.1 0-.2-.1l-.2-.9-.1-.2h-2.4c-.1 0-.2 0-.2.2l-.3.9c0 .1-.1.1-.1.1h-2.1l.2-.5L27 8.7c0-.5.3-.7.8-.7h1.5c.1 0 .2 0 .2.2l1.4 6.5c.1.4.2.7.2 1.1.1.1.1.1.1.2zm-13.4-.3l.4-1.8c.1 0 .2.1.2.1.7.3 1.4.5 2.1.4.2 0 .5-.1.7-.2.5-.2.5-.7.1-1.1-.2-.2-.5-.3-.8-.5-.4-.2-.8-.4-1.1-.7-1.2-1-.8-2.4-.1-3.1.6-.4.9-.8 1.7-.8 1.2 0 2.5 0 3.1.2h.1c-.1.6-.2 1.1-.4 1.7-.5-.2-1-.4-1.5-.4-.3 0-.6 0-.9.1-.2 0-.3.1-.4.2-.2.2-.2.5 0 .7l.5.4c.4.2.8.4 1.1.6.5.3 1 .8 1.1 1.4.2.9-.1 1.7-.9 2.3-.5.4-.7.6-1.4.6-1.4 0-2.5.1-3.4-.2-.1.2-.1.2-.2.1zm-3.5.3c.1-.7.1-.7.2-1 .5-2.2 1-4.5 1.4-6.7.1-.2.1-.3.3-.3H18c-.2 1.2-.4 2.1-.7 3.2-.3 1.5-.6 3-1 4.5 0 .2-.1.2-.3.2M5 8.2c0-.1.2-.2.3-.2h3.4c.5 0 .9.3 1 .8l.9 4.4c0 .1 0 .1.1.2 0-.1.1-.1.1-.1l2.1-5.1c-.1-.1 0-.2.1-.2h2.1c0 .1 0 .1-.1.2l-3.1 7.3c-.1.2-.1.3-.2.4-.1.1-.3 0-.5 0H9.7c-.1 0-.2 0-.2-.2L7.9 9.5c-.2-.2-.5-.5-.9-.6-.6-.3-1.7-.5-1.9-.5L5 8.2z"
+                fill="#142688"></path>
+            </svg>
+          </li>
+        </ul>
+      </div>
       <div class="page-footer__copyright copyright">
-        <p class="copyright__text">Разработано:</p>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <svg width="27" height="34">
-            <use xlink:href="#icon-academy"></use>
-          </svg>
-          <span class="vissually-hidden">
-            HTML Academy
-          </span>
-        </a>
+        <p class="copyright__text">&#169; 2019 ARTIGIANOBYASONI_CHF &#8226; POWERED BY SHOPIFY</p>
       </div>
     </div>
   </footer>
-  <div class="fog"></div>
-  <div class="modal">
-    <div class="modal__wrapper">
-      <h2 class="modal__title">Добавить в корзину</h2>
-      <p class="modal__text">Выберите размер:</p>
-      <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
-        <input id="small" class="vissually-hidden modal__input" type="radio" name="size" value="small-size" checked>
-        <label for="small" class="modal__label">s</label>
-        <input id="medium" class="vissually-hidden modal__input" type="radio" name="size" value="medium-size">
-        <label for="medium" class="modal__label">m</label>
-        <input id="large" class="vissually-hidden modal__input" type="radio" name="size" value="large-size">
-        <label for="large" class="modal__label">l</label>
-        <button class="button modal__button" type="submit">Добавить</button>
-      </form>
-    </div>
-  </div>
-  <script src="js/menu.min.js"></script>
-  <script src="js/popup.min.js"></script>
-  <script src="js/map.min.js"></script>
-  <script src="js/pickturefill.min.js"></script>
 </body>
 
 </html>

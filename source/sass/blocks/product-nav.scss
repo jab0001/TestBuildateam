@@ -1,0 +1,35 @@
+.product-nav {
+  display: none;
+
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 15px;
+
+  text-align: center;
+
+  color: #222143;
+}
+
+@media (min-width: $desktop-width) {
+  .product-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .product-nav__btn {
+    width: 62px;
+    height: 22px;
+    border-bottom: 2px solid #E9E9E9;
+    display: block;
+
+    &:hover {
+      border-color: #222143;
+    }
+
+    &:focus {
+      border-color: #222143;
+    }
+  }
+}

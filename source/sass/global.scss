@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: "OpenSans", "Arial", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-size: 15px;
   font-weight: normal;
@@ -35,4 +35,20 @@ input[type="radio"].vissually-hidden {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+.only-desktop {
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
+
+.only-mobile {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }

@@ -1,0 +1,18 @@
+.paysystem {
+  margin: 0 auto;
+  margin-top: 35px;
+  width: 260px;
+}
+
+.paysystem__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: $desktop-width) {
+  .paysystem {
+    margin-top: 55px;
+  }
+}

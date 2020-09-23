@@ -1,64 +1,132 @@
 .page-footer {
-  margin-top: 39px;
+  width: 100%;
+  margin-top: 50px;
+}
 
-  background-color: $bg-color-footer;
+.page-footer__container {
+  background-color: #040b4c;
+  padding-top: 55px;
 }
 
 .page-footer__logo {
-  display: none;
+  display: block;
+  margin: 0 auto;
 }
 
-@media (min-width: $tablet-width) {
-  .page-footer {
-    margin-top: 57px;
-    min-height: 143px;
+.page-footer__list {
+  padding: 0;
+  margin: 0 auto;
+  width: 337px;
+}
+
+.page-footer__title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  margin: 0;
+  margin-bottom: 15px;
+  line-height: normal;
+
+  text-transform: uppercase;
+
+  color: #b4b6c9;
+}
+
+.page-footer__info {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  line-height: normal;
+  font-size: 14px;
+
+  margin: 0;
+  margin-bottom: 30px;
+
+  color: $main-color;
+}
+
+.page-footer__form {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.page-footer__email {
+  margin: 0;
+  padding: 0;
+  padding-left: 15px;
+
+  width: 75%;
+  height: 50px;
+  margin-bottom: 0;
+  background: #fffcfc;
+  color: #3d3d3d;
+  border: 0;
+  border-radius: 0;
+
+  &::placeholder {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #535353;
   }
 
-  .page-footer__logo {
-    display: block;
-    margin-top: 50px;
-    margin-left: 50px;
-    width: 102px;
-    height: 34px;
+}
 
-    fill: $color-dark;
+.page-footer__btn {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
 
-    &:hover {
-      fill: $hvr-scnd-btn-color;
-    }
+  width: 25%;
+  background: #c2c2c2;
+  color: #ffffff;
+  border: 0;
+  border-radius: 0;
+  font-weight: 300;
 
-    &:focus,
-    &:active {
-      fill: $hvr-scnd-btn-color;
-      opacity: 0.3;
-    }
-  }
+  cursor: pointer;
+}
 
-  .page-footer__container {
-    display: flex;
-    width: 768px;
-    margin: 0 auto;
-  }
+.page-footer__contact-list {
+  margin: 0;
+  padding: 0;
+  margin-top: 25px;
+}
 
-  .page-footer--catalog {
-    margin-top: 62px;
-  }
+.page-footer__contact-item {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #b4b6c9;
+}
 
-  .page-footer--form {
-    margin-top: 51px;
+.page-footer__contact-link {
+  color: #b4b6c9;
+
+  &:hover {
+    color: $main-color;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-footer {
-    margin-top: 70px;
+    margin-top: 124px;
   }
 
-  .page-footer__container {
-    width: 1150px;
+  .page-footer__list {
+    margin: 0;
+    margin: 0 auto;
+    width: 1170px;
+
+    display: flex;
   }
 
-  .page-footer--form {
-    margin-top: 49px;
+  .page-footer__item {
+    width: 580px;
+
+    &--desktop {
+      margin-right: 25px;
+    }
+  }
+
+  .page-footer__contact-list {
+    margin-top: 38px;
   }
 }
